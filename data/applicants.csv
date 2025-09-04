@@ -1,0 +1,8 @@
+id,name,dob,age,gender,parent_income,category,address,pwd,language,highest_qualification,skills,experience_years,tier,locality
+1757012678,Vaibhav Baranwal,2004-08-12,21,Male,200000.0,GEN,"hello,gelll,(13252)",No,English,graduation,c;css;docker;git;html;javascript;mongodb;node;react,0,T1,urban
+1757012830,Vaibhav Baranwal,2004-08-12,21,Male,200000.0,GEN,"hello,gelll,(13252)",No,English,graduation,c;css;docker;git;html;javascript;mongodb;node;react,0,T1,urban
+1757013206,India Gate,2002-12-12,22,Male,300000.0,OBC,sfsfddhhrhfhnghmngjmg,No,English,10th,c;css;docker;git;html;javascript;mongodb;node;react,0,T2,rural
+1757013573,Humayun's Tomb,2004-08-13,21,Male,900000.0,GEN,fbdfgjfgisjgpsjspvjbpobjp,No,Hindi,diploma,c;css;git;html;java;javascript;mongodb;node;react,0,T3,rural
+1757013763,Lodhi Garden,2004-12-14,20,Male,200000.0,ST,hello,No,Hindi,graduation,azure;css;git;html;java;javascript;mongodb;mysql;node;react;sql,0,T3,urban
+6,India Gate,2004-08-18,21,Male,200000,General,ivsfoivshsoivsvoshvodhodhodh,No,English,graduation,css;git;html;java;javascript;mongodb;node;react,0,T2
+7,illegal_parking_dataset,2005-10-08,19,Male,200000,OBC,ivsfoivshsoivsvoshvodhodhodh,No,English,10th,azure;css;git;html;java;javascript;mongodb;mysql;node;react;sql,0,T3

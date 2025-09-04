@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block content %}
+  <h2 class="mb-4">Model Performance</h2>
+  <div id="graph"></div>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <script>
+    var graphJSON = {{ graphJSON|safe }};
+    Plotly.newPlot("graph", graphJSON.data, graphJSON.layout);
+  </script>
+{% endblock %}
