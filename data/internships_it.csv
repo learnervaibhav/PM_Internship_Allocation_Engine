@@ -1,0 +1,4 @@
+internship_id,company,role,vacancies,required_skills,description,location_tier,location_type
+101,StartUpX,Software Dev Intern,5,python;flask;git,Backend dev with Python/Flask,T1,urban
+102,DataWorks,Data Science Intern,3,python;pandas;scikit-learn,Data analysis & ML pipelines,T2,urban
+103,Webify,Frontend Intern,2,javascript;react;html;css,Frontend dev with React,T2,urban

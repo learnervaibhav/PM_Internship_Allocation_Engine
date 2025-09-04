@@ -1,0 +1,8 @@
+body { font-family: Arial, sans-serif; margin: 20px; }
+header { margin-bottom: 20px; }
+textarea { width: 100%; }
+table { border-collapse: collapse; margin-top: 20px; width: 100%; }
+table, th, td { border: 1px solid #ccc; padding: 6px; }
+body { background-color: #f9fafc; }
+.card { border-radius: 12px; }
+.table th, .table td { vertical-align: middle; }

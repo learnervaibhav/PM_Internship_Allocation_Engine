@@ -1,0 +1,91 @@
+{% extends "base.html" %}
+{% block content %}
+  <h2 class="mb-4">Internship Application Form</h2>
+  <form method="post" enctype="multipart/form-data" class="row g-3">
+
+    <div class="col-md-6">
+      <label class="form-label">Name</label>
+      <input type="text" name="name" class="form-control" required>
+    </div>
+
+    <div class="col-md-6">
+      <label class="form-label">Date of Birth</label>
+      <input type="date" name="dob" class="form-control" required>
+    </div>
+
+    <div class="col-md-6">
+      <label class="form-label">Gender</label>
+      <select name="gender" class="form-select" required>
+        <option>Male</option>
+        <option>Female</option>
+        <option>Other</option>
+      </select>
+    </div>
+
+    <div class="col-md-6">
+      <label class="form-label">Parent Income</label>
+      <input type="number" name="parent_income" class="form-control" required>
+    </div>
+
+    <div class="col-md-6">
+      <label class="form-label">Category</label>
+      <select name="category" class="form-select" required>
+        <option>General</option>
+        <option>SC</option>
+        <option>ST</option>
+        <option>OBC</option>
+      </select>
+    </div>
+
+    <div class="col-md-6">
+      <label class="form-label">Address</label>
+      <input type="text" name="address" class="form-control" required>
+    </div>
+
+    <div class="col-md-6">
+      <label class="form-label">PWD (Person with Disability)</label>
+      <select name="pwd" class="form-select">
+        <option>No</option>
+        <option>Yes</option>
+      </select>
+    </div>
+
+    <div class="col-md-6">
+      <label class="form-label">Language</label>
+      <input type="text" name="language" class="form-control" required>
+    </div>
+
+    <div class="col-md-6">
+      <label class="form-label">Highest Qualification</label>
+      <select name="highest_qualification" class="form-select" required>
+        <option>10th</option>
+        <option>12th</option>
+        <option>diploma</option>
+        <option>graduation</option>
+      </select>
+    </div>
+
+    <div class="col-md-6">
+      <label class="form-label">Years of Experience</label>
+      <input type="number" name="experience_years" class="form-control" value="0">
+    </div>
+
+    <div class="col-md-6">
+      <label class="form-label">Tier (City)</label>
+      <select name="tier" class="form-select" required>
+        <option>T1</option>
+        <option>T2</option>
+        <option>T3</option>
+      </select>
+    </div>
+
+    <div class="col-md-6">
+      <label class="form-label">Upload Resume</label>
+      <input type="file" name="resume" class="form-control" required>
+    </div>
+
+    <div class="col-12">
+      <button type="submit" class="btn btn-primary">Submit Application</button>
+    </div>
+  </form>
+{% endblock %}

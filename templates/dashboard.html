@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block content %}
+  <h2 class="mb-4">Dashboard</h2>
+  <p><strong>Total Applicants:</strong> {{ total }}</p>
+  <p><strong>Eligible:</strong> {{ eligible }}</p>
+  <p><strong>Filtered Out:</strong> {{ filtered_out }}</p>
+
+  <div class="row">
+    <div class="col-md-6"><div id="catPlot"></div></div>
+    <div class="col-md-6"><div id="tierPlot"></div></div>
+  </div>
+  <div class="row mt-4">
+    <div class="col-md-12"><div id="eligPlot"></div></div>
+  </div>
+
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <script>
+    Plotly.newPlot("catPlot", {{ catJSON|safe }}.data, {{ catJSON|safe }}.layout);
+    Plotly.newPlot("tierPlot", {{ tierJSON|safe }}.data, {{ tierJSON|safe }}.layout);
+    Plotly.newPlot("eligPlot", {{ eligJSON|safe }}.data, {{ eligJSON|safe }}.layout);
+  </script>
+{% endblock %}

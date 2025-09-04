@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% block content %}
+  <h2 class="mb-4 text-primary">Top Recommendations</h2>
+  {% for r in results %}
+    <div class="card mb-4 shadow-sm">
+      <div class="card-header bg-primary text-white">
+        {{ r.name }} (Applicant ID: {{ r.applicant_id }})
+      </div>
+      <div class="card-body">
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th>Rank</th><th>ID</th><th>Company</th><th>Role</th>
+              <th>Similarity</th><th>Edu Score</th><th>Final Score</th>
+            </tr>
+          </thead>
+          <tbody>
+           {% for rec in r.top_recommendations %}
+  <tr>
+    <td>{{ loop.index }}</td>  {# loop.index starts at 1 #}
+    <td>{{ rec.internship_id }}</td>
+    <td>{{ rec.company }}</td>
+    <td>{{ rec.role }}</td>
+    <td>{{ "%.3f"|format(rec.similarity) }}</td>
+    <td>{{ "%.2f"|format(rec.edu_score) }}</td>
+    <td><span class="badge bg-success">{{ "%.3f"|format(rec.combined_score_final) }}</span></td>
+  </tr>
+{% endfor %}
+
+          </tbody>
+        </table>
+      </div>
+    </div>
+  {% endfor %}
+  <a href="{{ url_for('index') }}" class="btn btn-primary">← Back to Form</a>
+{% endblock %}
