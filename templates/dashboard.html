@@ -1,22 +1,58 @@
 {% extends "base.html" %}
 {% block content %}
-  <h2 class="mb-4">Dashboard</h2>
-  <p><strong>Total Applicants:</strong> {{ total }}</p>
-  <p><strong>Eligible:</strong> {{ eligible }}</p>
-  <p><strong>Filtered Out:</strong> {{ filtered_out }}</p>
+  <div class="container mt-4">
+    <h2 class="mb-4 text-primary">Admin Dashboard</h2>
 
-  <div class="row">
-    <div class="col-md-6"><div id="catPlot"></div></div>
-    <div class="col-md-6"><div id="tierPlot"></div></div>
-  </div>
-  <div class="row mt-4">
-    <div class="col-md-12"><div id="eligPlot"></div></div>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card text-center shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title">Total Applicants</h5>
+            <p class="display-6 fw-bold">{{ total }}</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card text-center shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title">Eligible</h5>
+            <p class="display-6 text-success fw-bold">{{ eligible }}</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card text-center shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title">Filtered Out</h5>
+            <p class="display-6 text-danger fw-bold">{{ filtered_out }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mt-5">
+      <h4 class="mb-3">Distributions</h4>
+      <div class="row g-4">
+        <div class="col-md-6">
+          <div id="cat-chart"></div>
+        </div>
+        <div class="col-md-6">
+          <div id="tier-chart"></div>
+        </div>
+        <div class="col-md-12">
+          <div id="elig-chart"></div>
+        </div>
+      </div>
+    </div>
   </div>
 
   <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
   <script>
-    Plotly.newPlot("catPlot", {{ catJSON|safe }}.data, {{ catJSON|safe }}.layout);
-    Plotly.newPlot("tierPlot", {{ tierJSON|safe }}.data, {{ tierJSON|safe }}.layout);
-    Plotly.newPlot("eligPlot", {{ eligJSON|safe }}.data, {{ eligJSON|safe }}.layout);
+    var catJSON = {{ catJSON|safe }};
+    var tierJSON = {{ tierJSON|safe }};
+    var eligJSON = {{ eligJSON|safe }};
+    Plotly.newPlot("cat-chart", catJSON.data, catJSON.layout, {responsive: true});
+    Plotly.newPlot("tier-chart", tierJSON.data, tierJSON.layout, {responsive: true});
+    Plotly.newPlot("elig-chart", eligJSON.data, eligJSON.layout, {responsive: true});
   </script>
 {% endblock %}

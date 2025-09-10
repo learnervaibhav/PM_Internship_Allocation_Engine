@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% block content %}
+  <div class="container">
+    <h2 class="mb-4 text-primary">Available Internships</h2>
+
+    {% if internships %}
+      <div class="row g-4">
+        {% for int in internships %}
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100 shadow-sm">
+              <div class="card-body">
+                <h5 class="card-title text-dark">{{ int.Company }}</h5>
+                <p class="card-text">
+                  <strong>Role:</strong> {{ int.Role }}<br>
+                  <strong>Sector:</strong> {{ int.Sector }}<br>
+                  <strong>Location:</strong> {{ int.City }}
+                </p>
+                <a href="{{ url_for('ranks_for_internship', internship_id=int.InternshipID) }}" 
+                   class="btn btn-sm btn-outline-primary">
+                  View Ranks →
+                </a>
+              </div>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    {% else %}
+      <p class="text-muted">No internships found.</p>
+    {% endif %}
+  </div>
+{% endblock %}
