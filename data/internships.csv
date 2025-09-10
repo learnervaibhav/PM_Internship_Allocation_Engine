@@ -1,6 +1,401 @@
-id,title,description,sector,location,skills_required,capacity
-1,Data Science Intern,Analyze data and build predictive models.,IT,New Delhi,Python;Machine Learning;Statistics,10
-2,Software Engineer Intern,Develop backend APIs and features.,IT,Bangalore,Java;Spring;SQL,15
-3,Marketing Intern,Assist in digital marketing campaigns.,Marketing,Mumbai,SEO;Content Writing;Social Media,8
-4,Product Management Intern,Support product roadmap and market research.,Product,Hyderabad,Product Management;Agile;Communication,5
-5,Graphic Design Intern,Create graphics and digital assets.,Design,Chennai,Adobe Photoshop;Illustrator;Creativity,4
+InternshipID,Company,Role,Sector,Required_Skills,Seats,Tier,Location,Description
+3f9fb069,IIT Delhi,Research Assistant,Education,"nlp, teaching, research",10,Tier-1,Mumbai,Est laudantium quia sapiente omnis veritatis veniam.
+b2532cee,Tata Motors,Data Analyst,Manufacturing,"quality, automation, safety",8,Tier-3,Ranchi,Vel laboriosam nulla nihil neque.
+f38054ef,HDFC Bank,Software Dev,Banking & Finance,"accounting, analysis, excel",14,Tier-2,Lucknow,Alias eligendi non reprehenderit.
+3b19bfa3,SAIL,Data Analyst,Manufacturing,"safety, quality",13,Tier-3,Varanasi,Fuga quasi dolorem consectetur nobis ipsa ipsum.
+46eb7e8b,BHEL,Software Dev,Manufacturing,"automation, robotics",17,Tier-1,Delhi,Reprehenderit officia sequi quo veritatis aliquid quisquam.
+a6a68655,PwC India,Field Intern,Consulting,"strategy, presentation",13,Tier-3,Agra,Vel similique quo commodi.
+a3ef7054,SAIL,Field Intern,Manufacturing,"cad, quality",13,Tier-1,Delhi,Hic accusamus perspiciatis quia quibusdam culpa.
+fae7acc5,DRDO,Research Assistant,Defence,"aerospace, embedded, radar",8,Tier-3,Varanasi,Ipsa totam eius quaerat.
+4f247b8f,KPMG India,Field Intern,Consulting,"presentation, excel, strategy",4,Tier-2,Patna,Magni unde minima sint.
+7b814e45,KPMG India,Research Assistant,Consulting,"analysis, strategy",5,Tier-3,Gaya,Error tempore totam veniam atque ab adipisci.
+fe83a44d,AIIMS,Research Assistant,Healthcare,"public health, clinical, nursing, bio",11,Tier-3,Raipur,Autem officiis aliquid.
+9c444da6,ICAR,Software Dev,Agriculture,"foodtech, agri",10,Tier-2,Patna,Similique dolore provident expedita culpa ea.
+2c831b68,Wipro,Software Dev,IT & Software,"dl, docker, sql, aws",4,Tier-1,Mumbai,Doloremque molestias quaerat facere voluptatibus qui.
+5a7615f3,Apollo Hospitals,Software Dev,Healthcare,"nursing, public health, bio, clinical",19,Tier-3,Raipur,Consectetur laudantium voluptatem sapiente.
+a5383233,HDFC Bank,Research Assistant,Banking & Finance,"accounting, analysis, risk, sql",17,Tier-2,Nagpur,Explicabo veniam eveniet rerum quas quae illum quis.
+22cfbd4c,NIT Trichy,Software Dev,Education,"content, research, nlp",11,Tier-1,Delhi,Inventore quos quas vel officiis ut id.
+459db719,NABARD,Research Assistant,Agriculture,"sustainability, agri, soil",7,Tier-2,Jaipur,Voluptates enim possimus ducimus impedit nulla magni.
+bf5630c7,NITI Aayog,Data Analyst,Consulting,"presentation, excel",15,Tier-3,Kota,Consequuntur unde velit aliquid atque minima consequatur.
+f562dfae,Mahindra,Data Analyst,Manufacturing,"robotics, safety, quality",13,Tier-1,Mumbai,Nihil nulla animi perspiciatis ipsum ex eveniet.
+16774233,DRDO,Field Intern,Defence,"radar, embedded, aerospace",4,Tier-1,Delhi,Non eos eum soluta.
+b5b041b3,Mahindra,Data Analyst,Manufacturing,"quality, robotics, cad, automation",20,Tier-3,Gaya,Dolor doloribus quod est tempora.
+49bd1fb2,NITI Aayog,Intern,Consulting,"excel, strategy, analysis, presentation",3,Tier-2,Patna,Sapiente accusamus soluta cum quam suscipit et.
+e3ba0b18,Apollo Hospitals,Research Assistant,Healthcare,"bio, public health, nursing",13,Tier-2,Jaipur,Explicabo modi quas explicabo nemo eligendi quis.
+e9fde5d6,Mahindra,Field Intern,Manufacturing,"cad, quality, automation",8,Tier-3,Agra,Nisi sit quo.
+9ec41b24,Axis Bank,Software Dev,Banking & Finance,"finance, analysis",1,Tier-2,Nagpur,Velit est dolores.
+5e47db34,DRDO,Research Assistant,Defence,"navigation, aerospace, radar, embedded",2,Tier-3,Gaya,Ut mollitia tempora.
+d5beb8ce,Apollo Hospitals,Intern,Healthcare,"public health, bio, nursing",12,Tier-2,Lucknow,Amet rerum veniam explicabo rem recusandae.
+2b4e4500,Infosys,Software Dev,IT & Software,"java, docker, aws, python",8,Tier-3,Raipur,Culpa sunt vel.
+39a5f99e,NITI Aayog,Field Intern,Consulting,"strategy, analysis, excel, presentation",18,Tier-1,Kolkata,Voluptatum sequi aliquam.
+c06ff702,NABARD,Intern,Agriculture,"foodtech, soil, agri, sustainability",12,Tier-3,Raipur,Cupiditate minus reprehenderit quaerat et.
+93c9899b,NABARD,Field Intern,Agriculture,"agri, soil, sustainability, foodtech",17,Tier-3,Varanasi,Quia deleniti voluptatem totam velit consectetur similique tempora.
+c1dd63cf,SAIL,Research Assistant,Manufacturing,"automation, safety, quality, cad",9,Tier-1,Kolkata,Eaque praesentium dolores mollitia.
+a19fa574,Axis Bank,Research Assistant,Banking & Finance,"risk, sql, excel, finance",12,Tier-3,Raipur,Et minima consequatur.
+173eaab3,NITI Aayog,Software Dev,Consulting,"presentation, strategy, excel, analysis",12,Tier-3,Ranchi,Voluptas tenetur reiciendis.
+d39c1c7e,KPMG India,Intern,Consulting,"strategy, analysis, excel",7,Tier-3,Kota,Quos non et temporibus rerum magnam.
+48113597,Infosys,Research Assistant,IT & Software,"ml, sql, java, python",6,Tier-2,Patna,Consequuntur a non eos repellat occaecati cupiditate.
+352dc6b3,HCL,Research Assistant,IT & Software,"aws, docker, java, dl",3,Tier-3,Varanasi,Fugit quasi soluta.
+f08dbb14,IFFCO,Data Analyst,Agriculture,"agri, foodtech",20,Tier-3,Raipur,Enim quaerat quia eius nisi.
+97029f39,IIT Delhi,Data Analyst,Education,"teaching, nlp, content, research",18,Tier-3,Raipur,Ullam dolore reprehenderit officia.
+87c5bee2,TCS,Data Analyst,IT & Software,"react, java",14,Tier-3,Varanasi,Quia quibusdam unde saepe dolorem ex.
+db507396,HAL,Data Analyst,Defence,"aerospace, navigation, radar, embedded",12,Tier-1,Kolkata,Expedita commodi voluptates repudiandae unde dignissimos similique.
+0a900f6a,KPMG India,Intern,Consulting,"presentation, strategy",5,Tier-2,Nagpur,Ratione esse vero excepturi mollitia.
+8af14834,AIIMS,Intern,Healthcare,"public health, nursing, bio",2,Tier-1,Chennai,Labore facilis quisquam esse officia laborum.
+a24a6957,SBI,Data Analyst,Banking & Finance,"analysis, accounting, excel, sql",17,Tier-1,Chennai,Provident commodi sit aliquid iusto.
+47db1122,Infosys,Research Assistant,IT & Software,"sql, flask, python, java",12,Tier-2,Jaipur,Necessitatibus ab repellendus quidem.
+111e40db,BHEL,Software Dev,Manufacturing,"cad, quality",6,Tier-2,Patna,Sed veritatis optio cum.
+6a6cfc93,Wipro,Field Intern,IT & Software,"python, flask, dl, aws",15,Tier-1,Delhi,Tempora distinctio occaecati dolor minima deleniti.
+b34b57df,HDFC Bank,Intern,Banking & Finance,"accounting, sql, finance, risk",11,Tier-1,Delhi,Ad eos est illo.
+d3f6623b,Wipro,Intern,IT & Software,"sql, flask",3,Tier-3,Kota,Labore deserunt asperiores voluptatibus sit voluptate.
+3e2b4d95,RBI,Research Assistant,Banking & Finance,"risk, finance, accounting, sql",2,Tier-1,Chennai,Fuga architecto repellendus natus commodi cumque voluptate.
+475c8fa2,Fortis,Research Assistant,Healthcare,"bio, nursing",20,Tier-3,Gaya,Deserunt tempora maxime.
+3e74aed6,HDFC Bank,Software Dev,Banking & Finance,"excel, risk, accounting, finance",12,Tier-1,Delhi,Est eaque debitis natus.
+4d67224f,HDFC Bank,Field Intern,Banking & Finance,"finance, risk",4,Tier-3,Agra,Fugit nobis maxime debitis.
+845f5c12,PwC India,Software Dev,Consulting,"strategy, presentation, analysis",18,Tier-3,Varanasi,Officiis mollitia nemo.
+0069cc7e,Apollo Hospitals,Data Analyst,Healthcare,"nursing, bio, public health, clinical",10,Tier-1,Chennai,Voluptatem eius corrupti dolor beatae non sunt.
+1fa1dedd,KPMG India,Software Dev,Consulting,"strategy, analysis, presentation, excel",16,Tier-3,Varanasi,Ex reprehenderit facere unde culpa quis.
+3134d70c,DRDO,Data Analyst,Defence,"aerospace, radar, embedded, navigation",13,Tier-3,Ranchi,Quis optio reprehenderit tenetur.
+888d443b,ICAR,Software Dev,Agriculture,"sustainability, foodtech, soil, agri",12,Tier-1,Kolkata,Excepturi odit eius ratione perferendis officiis dolor.
+29d6dfc1,PwC India,Software Dev,Consulting,"presentation, strategy",16,Tier-2,Bhubaneswar,Voluptatem eius corrupti deleniti officiis illo error.
+f9c24709,NIT Trichy,Research Assistant,Education,"nlp, teaching",4,Tier-1,Hyderabad,Dolore repudiandae laborum asperiores sunt nihil.
+68d01265,Wipro,Data Analyst,IT & Software,"python, ml",12,Tier-1,Chennai,Dolores necessitatibus optio nesciunt impedit possimus minima.
+ef4ca0e9,Fortis,Research Assistant,Healthcare,"public health, clinical, nursing",18,Tier-2,Nagpur,Odio similique quisquam voluptas odit.
+2267e94d,Infosys,Intern,IT & Software,"docker, aws, python, ml",17,Tier-3,Gaya,Occaecati provident fuga repudiandae amet accusamus.
+06d2167c,DRDO,Research Assistant,Defence,"embedded, radar, navigation",10,Tier-1,Hyderabad,Quam in eveniet odit quaerat.
+cca18208,HDFC Bank,Field Intern,Banking & Finance,"finance, excel, analysis",6,Tier-2,Bhubaneswar,Aspernatur deserunt labore nulla eaque.
+868fc4fc,NIT Trichy,Intern,Education,"nlp, teaching",19,Tier-3,Kota,Dolore magni consectetur corporis ea deserunt ab.
+e3ee7d01,RBI,Software Dev,Banking & Finance,"excel, analysis, finance, risk",3,Tier-3,Raipur,Voluptatum assumenda animi reiciendis ipsam ipsa distinctio.
+0c3e3fb6,ISRO,Research Assistant,Defence,"radar, embedded",3,Tier-2,Bhubaneswar,Explicabo totam maiores vel.
+94575da8,Apollo Hospitals,Data Analyst,Healthcare,"bio, nursing, public health, clinical",4,Tier-1,Delhi,Ab quia doloribus quia.
+80b34e74,RBI,Field Intern,Banking & Finance,"analysis, risk, sql, accounting",15,Tier-3,Ranchi,Ut provident vel impedit commodi impedit corporis.
+2db3355a,SAIL,Data Analyst,Manufacturing,"cad, quality",11,Tier-2,Bhubaneswar,Illum maxime quas.
+71afcb13,ICAR,Software Dev,Agriculture,"agri, soil",1,Tier-1,Hyderabad,Veniam nam commodi esse aspernatur.
+79153e8b,NABARD,Research Assistant,Agriculture,"foodtech, sustainability, soil, agri",17,Tier-2,Lucknow,Recusandae inventore nam repellat.
+72608438,TCS,Field Intern,IT & Software,"react, sql, aws",15,Tier-3,Agra,Harum culpa beatae in.
+55dce7f7,Apollo Hospitals,Field Intern,Healthcare,"clinical, nursing, public health, bio",1,Tier-2,Lucknow,Vel totam nam doloremque libero quis.
+ad27e3f0,Mahindra,Data Analyst,Manufacturing,"safety, cad",7,Tier-2,Bhubaneswar,Nulla eos illum architecto pariatur.
+ef868a8e,KPMG India,Data Analyst,Consulting,"presentation, strategy, excel, analysis",2,Tier-2,Jaipur,Eligendi nesciunt eum iste unde delectus natus.
+e406bf49,Axis Bank,Software Dev,Banking & Finance,"finance, accounting",15,Tier-3,Ranchi,Maxime quo placeat repellendus totam consequatur.
+d64ae1e6,Wipro,Data Analyst,IT & Software,"react, flask, python, java",15,Tier-1,Delhi,Sint quia quae.
+3145ebbc,IFFCO,Intern,Agriculture,"foodtech, agri, soil",7,Tier-2,Patna,Dignissimos quia eaque adipisci unde ratione excepturi.
+8636171b,NITI Aayog,Field Intern,Consulting,"strategy, presentation, analysis",8,Tier-2,Nagpur,Sequi ratione cupiditate.
+4cc3b72f,NTPC,Intern,Manufacturing,"automation, cad, safety, robotics",11,Tier-1,Mumbai,Sapiente repudiandae veritatis doloribus sint.
+a3294aed,NTPC,Research Assistant,Manufacturing,"cad, safety",16,Tier-3,Raipur,Nemo nostrum maxime rerum praesentium.
+5485820d,HAL,Field Intern,Defence,"navigation, embedded, radar",14,Tier-1,Hyderabad,Nihil animi nostrum nisi quae optio officiis tempore.
+8c1baafc,NITI Aayog,Data Analyst,Consulting,"strategy, presentation, analysis",14,Tier-3,Ranchi,Repellendus recusandae doloribus eveniet repudiandae tenetur ducimus.
+34b4816d,HAL,Intern,Defence,"navigation, embedded, aerospace",12,Tier-3,Varanasi,Labore asperiores earum similique.
+385f06dd,SBI,Field Intern,Banking & Finance,"analysis, sql",7,Tier-1,Chennai,Pariatur similique magnam iusto aut animi.
+d0d5d7af,RBI,Data Analyst,Banking & Finance,"risk, accounting, sql",14,Tier-3,Raipur,Ipsa veniam voluptatibus et consequuntur odio.
+132fa148,NCERT,Field Intern,Education,"nlp, content",3,Tier-2,Nagpur,Laborum quisquam distinctio aliquam quia vero quia.
+e16432d6,Apollo Hospitals,Research Assistant,Healthcare,"nursing, public health, bio",3,Tier-3,Raipur,Cupiditate quasi necessitatibus qui saepe dicta necessitatibus.
+46d968a0,Mahindra,Field Intern,Manufacturing,"cad, safety, automation",7,Tier-3,Kota,Saepe magni sunt necessitatibus similique iure.
+5f3f018c,ICICI Bank,Software Dev,Banking & Finance,"excel, risk, finance, accounting",9,Tier-3,Varanasi,Quos assumenda ea blanditiis.
+8e42c497,ICAR,Field Intern,Agriculture,"agri, foodtech, soil",20,Tier-3,Kota,Fuga deleniti tempora consequuntur quas.
+800334a7,SBI,Research Assistant,Banking & Finance,"risk, analysis, accounting, excel",8,Tier-2,Bhubaneswar,Quia dolores numquam unde consequuntur sapiente qui.
+dbf74a85,ISRO,Data Analyst,Defence,"aerospace, embedded, navigation, radar",2,Tier-3,Varanasi,Omnis in quo.
+03e439e9,HCL,Intern,IT & Software,"ml, aws, sql, docker",4,Tier-1,Chennai,Saepe amet quasi exercitationem.
+f4e4c752,RBI,Research Assistant,Banking & Finance,"sql, analysis, excel",5,Tier-3,Agra,Libero suscipit doloremque error incidunt corrupti.
+6e22f7fc,Mahindra,Research Assistant,Manufacturing,"safety, quality, cad, robotics",16,Tier-2,Nagpur,Quidem tempore ad asperiores accusantium impedit illum.
+2a59af33,IIT Delhi,Field Intern,Education,"content, teaching",18,Tier-1,Hyderabad,Dolore vero vitae animi soluta.
+7ebc73c8,IIT Delhi,Research Assistant,Education,"research, teaching, nlp",4,Tier-1,Bangalore,Tenetur iure corporis voluptas sapiente aliquid tempore.
+74740e67,NTPC,Intern,Manufacturing,"automation, quality, safety",13,Tier-1,Hyderabad,Excepturi porro reiciendis inventore.
+4c63c7a3,NABARD,Software Dev,Agriculture,"foodtech, soil, sustainability",2,Tier-2,Nagpur,Pariatur veniam saepe ipsum.
+7b47b1fe,ICAR,Field Intern,Agriculture,"agri, sustainability, foodtech, soil",15,Tier-2,Patna,Vero laborum dolorem nulla.
+2ed6cc0e,Apollo Hospitals,Intern,Healthcare,"clinical, public health, bio",6,Tier-1,Mumbai,Vel totam maxime ipsa.
+8109e352,IFFCO,Research Assistant,Agriculture,"foodtech, soil, sustainability, agri",5,Tier-2,Patna,Ea mollitia a accusamus numquam.
+edf9cf9e,RBI,Field Intern,Banking & Finance,"analysis, sql",13,Tier-1,Mumbai,Minus eum blanditiis iure.
+34a6a6e5,Fortis,Data Analyst,Healthcare,"nursing, bio, clinical, public health",6,Tier-2,Bhubaneswar,Sit inventore maxime blanditiis.
+433b2bc0,HCL,Data Analyst,IT & Software,"java, ml",7,Tier-2,Lucknow,Quam ipsum adipisci sequi.
+e48aadae,NIT Trichy,Data Analyst,Education,"research, nlp, content, teaching",14,Tier-2,Nagpur,Aliquam harum delectus odio maxime quisquam quidem deserunt.
+7428792c,PwC India,Software Dev,Consulting,"excel, analysis, strategy",15,Tier-1,Bangalore,Pariatur doloribus exercitationem quo inventore minus.
+d8b3514a,Axis Bank,Research Assistant,Banking & Finance,"finance, analysis, risk",6,Tier-3,Kota,Suscipit possimus magni soluta consequuntur nobis omnis.
+a6cbc801,KPMG India,Field Intern,Consulting,"strategy, analysis, presentation",3,Tier-3,Varanasi,Autem dolores iusto.
+93d265f4,PwC India,Field Intern,Consulting,"presentation, strategy",10,Tier-2,Nagpur,Quisquam id voluptate beatae placeat tenetur rerum.
+c3362fee,NABARD,Data Analyst,Agriculture,"soil, sustainability",9,Tier-2,Jaipur,Doloremque officiis pariatur.
+0403e784,NITI Aayog,Software Dev,Consulting,"excel, strategy",11,Tier-3,Raipur,Blanditiis facere nulla exercitationem est.
+d8265575,NABARD,Data Analyst,Agriculture,"soil, agri",3,Tier-1,Chennai,Quaerat ipsa dignissimos natus consectetur enim quibusdam.
+f81e475e,NCERT,Software Dev,Education,"teaching, content",5,Tier-3,Varanasi,Sequi sequi totam recusandae aliquam.
+bee254b9,Fortis,Software Dev,Healthcare,"bio, clinical, public health, nursing",7,Tier-3,Ranchi,Quae odit voluptas velit rem minima odit voluptatum.
+c754e430,SAIL,Software Dev,Manufacturing,"quality, automation, robotics, cad",20,Tier-3,Ranchi,Repellendus harum et soluta molestiae eos alias.
+17108f40,Wipro,Software Dev,IT & Software,"flask, dl, python, docker",17,Tier-3,Raipur,Nulla ea excepturi voluptatum error quaerat quam.
+d8fd0cde,Mahindra,Intern,Manufacturing,"robotics, cad, safety",8,Tier-3,Agra,Quibusdam a veritatis repellat molestias.
+bbaaf633,NABARD,Research Assistant,Agriculture,"agri, sustainability, foodtech",20,Tier-2,Lucknow,Cum inventore cumque alias beatae quod ducimus culpa.
+1d536134,Fortis,Research Assistant,Healthcare,"bio, nursing, clinical",8,Tier-1,Hyderabad,Cupiditate modi pariatur cumque dolore natus dolorem earum.
+6fec3288,NITI Aayog,Data Analyst,Consulting,"presentation, strategy, excel, analysis",5,Tier-1,Kolkata,Nisi neque eligendi doloremque molestiae ullam.
+3771632b,IIT Delhi,Research Assistant,Education,"content, nlp, teaching",10,Tier-2,Patna,Repellat debitis commodi sunt assumenda deserunt.
+4e70e55a,HAL,Software Dev,Defence,"aerospace, radar",2,Tier-2,Jaipur,Dignissimos aliquam quisquam voluptates maxime quos fugit.
+ad2896c2,Infosys,Data Analyst,IT & Software,"react, flask, python",11,Tier-2,Nagpur,Animi quam repudiandae minus voluptate illo vitae.
+84c87c4f,KPMG India,Research Assistant,Consulting,"excel, strategy",1,Tier-1,Chennai,Praesentium dignissimos earum tempore vel sapiente.
+98cef464,HDFC Bank,Data Analyst,Banking & Finance,"excel, sql",18,Tier-2,Nagpur,Quis quae saepe quod quidem inventore quo.
+9e1068b4,Fortis,Intern,Healthcare,"nursing, bio",3,Tier-1,Kolkata,Maxime iusto ipsa cum.
+abbe4eba,PwC India,Research Assistant,Consulting,"strategy, presentation, analysis, excel",6,Tier-1,Mumbai,Pariatur nobis soluta recusandae voluptatibus quia.
+63dfbf2f,ICAR,Intern,Agriculture,"soil, sustainability",7,Tier-2,Bhubaneswar,Distinctio cupiditate repudiandae quaerat perspiciatis vero.
+a7a2e4b0,ISRO,Software Dev,Defence,"radar, navigation, embedded",16,Tier-2,Jaipur,Asperiores expedita voluptatum dolor error rerum provident.
+448c08b4,Tata Motors,Field Intern,Manufacturing,"safety, robotics",8,Tier-2,Jaipur,Tempora recusandae corrupti optio.
+2b83e142,AIIMS,Data Analyst,Healthcare,"public health, nursing, bio",6,Tier-1,Hyderabad,Exercitationem totam cupiditate explicabo accusamus sequi labore.
+51cc15fb,Tata Motors,Field Intern,Manufacturing,"safety, robotics, automation, cad",7,Tier-2,Patna,Nihil similique maxime natus optio veniam consectetur maxime.
+f6302f29,IFFCO,Field Intern,Agriculture,"agri, soil, foodtech",3,Tier-1,Kolkata,Aliquid harum accusantium amet voluptatem tempora harum tempore.
+de037d55,Axis Bank,Field Intern,Banking & Finance,"excel, finance, analysis, risk",14,Tier-1,Mumbai,Beatae nisi eum nisi quidem commodi fuga.
+7c708af7,Apollo Hospitals,Field Intern,Healthcare,"bio, public health, nursing, clinical",8,Tier-3,Raipur,Architecto non magnam et.
+5148f10a,BHEL,Data Analyst,Manufacturing,"automation, safety, quality, cad",20,Tier-1,Kolkata,Cum dolore in explicabo aspernatur saepe.
+ad50fd60,Apollo Hospitals,Software Dev,Healthcare,"bio, clinical, public health",11,Tier-1,Bangalore,Beatae ipsa quam consectetur veniam adipisci.
+4a8a32d1,IFFCO,Research Assistant,Agriculture,"sustainability, soil, foodtech, agri",8,Tier-1,Kolkata,Nihil temporibus repellendus error eveniet occaecati.
+435b84df,NITI Aayog,Field Intern,Consulting,"analysis, strategy, excel",7,Tier-1,Bangalore,Distinctio optio atque labore possimus aperiam quod aperiam.
+cb942bbd,Apollo Hospitals,Software Dev,Healthcare,"clinical, public health, bio, nursing",3,Tier-2,Nagpur,Voluptates facere nemo libero dicta omnis distinctio quidem.
+b38ac42f,Fortis,Data Analyst,Healthcare,"nursing, bio",4,Tier-2,Patna,Voluptas velit inventore excepturi dolor sequi.
+b966b030,NTPC,Research Assistant,Manufacturing,"robotics, safety, quality",15,Tier-3,Agra,Inventore occaecati saepe voluptas eius fuga sed.
+6aeb48c0,ISRO,Intern,Defence,"navigation, radar",12,Tier-1,Chennai,Sequi suscipit eligendi inventore voluptates dolore.
+b85e3b4f,Axis Bank,Research Assistant,Banking & Finance,"excel, analysis",6,Tier-1,Bangalore,Cumque esse quisquam voluptatibus dolore dolorem corrupti.
+20645356,ISRO,Software Dev,Defence,"aerospace, embedded",4,Tier-2,Nagpur,Corrupti nostrum quo aspernatur.
+91279f9b,TCS,Data Analyst,IT & Software,"dl, java, python, docker",1,Tier-2,Jaipur,Praesentium voluptate enim vero ipsam vitae.
+3b7bdabd,Tata Motors,Data Analyst,Manufacturing,"cad, safety",5,Tier-1,Kolkata,Ipsa repudiandae cupiditate sunt voluptatum laborum.
+fed3c225,IIT Delhi,Intern,Education,"nlp, research, content",16,Tier-2,Jaipur,Quas id a assumenda.
+d9c13353,Accenture,Field Intern,IT & Software,"aws, dl, docker, flask",20,Tier-2,Jaipur,Rerum dolore adipisci unde itaque hic.
+ba18a02a,PwC India,Software Dev,Consulting,"strategy, excel, presentation",19,Tier-3,Agra,Corrupti aspernatur illum fugiat veniam error.
+6c736467,SBI,Field Intern,Banking & Finance,"excel, sql",7,Tier-3,Kota,Maxime soluta dolorem maiores quod numquam.
+b16dfb64,Apollo Hospitals,Data Analyst,Healthcare,"public health, nursing",5,Tier-2,Patna,Repellendus reiciendis quidem ab sint consequuntur.
+39612793,NCERT,Intern,Education,"nlp, teaching, research",8,Tier-1,Hyderabad,Qui commodi eaque officiis ea ea hic dolores.
+7528d795,HCL,Research Assistant,IT & Software,"ml, flask, java",20,Tier-1,Kolkata,Nulla enim suscipit.
+9f6d4ce3,SBI,Intern,Banking & Finance,"sql, risk, analysis, excel",11,Tier-3,Gaya,Nulla necessitatibus debitis dolor cupiditate labore odio.
+d497ddc2,ICICI Bank,Data Analyst,Banking & Finance,"analysis, finance, risk",7,Tier-2,Nagpur,Inventore voluptatum id perspiciatis.
+8692a610,NIT Trichy,Intern,Education,"nlp, research, teaching, content",17,Tier-3,Gaya,Explicabo amet minus illo quod asperiores.
+1acc381d,Infosys,Research Assistant,IT & Software,"docker, python, java",2,Tier-1,Mumbai,Sapiente facere repudiandae deleniti natus porro praesentium.
+02a9eb1f,Accenture,Intern,IT & Software,"flask, dl, aws, react",7,Tier-1,Kolkata,Libero cum voluptate officia eius dolores.
+935d06a4,IFFCO,Field Intern,Agriculture,"soil, agri, sustainability",17,Tier-2,Jaipur,Perferendis deserunt quae veniam quos.
+251f364d,AIIMS,Data Analyst,Healthcare,"nursing, public health",17,Tier-3,Kota,Porro necessitatibus facere hic sunt.
+5560c777,Tata Motors,Field Intern,Manufacturing,"safety, cad, automation, quality",16,Tier-1,Delhi,Laborum sit inventore aliquam fuga.
+69788d38,SAIL,Intern,Manufacturing,"automation, quality, cad, robotics",2,Tier-3,Raipur,Animi corporis eos.
+ded41ffc,HDFC Bank,Field Intern,Banking & Finance,"accounting, risk",16,Tier-1,Hyderabad,Iusto nihil consequatur aut molestias.
+a19613c5,IFFCO,Field Intern,Agriculture,"agri, soil, foodtech",15,Tier-3,Gaya,Molestias doloremque soluta veniam odit ipsam.
+9b553471,KPMG India,Intern,Consulting,"presentation, excel, strategy",20,Tier-1,Delhi,Nisi magni quis fugiat modi aliquid.
+51257899,NABARD,Software Dev,Agriculture,"agri, sustainability",5,Tier-3,Raipur,Nisi laudantium hic et.
+184a244f,Tata Motors,Software Dev,Manufacturing,"robotics, automation, cad",16,Tier-2,Lucknow,Mollitia neque est sapiente.
+9381a9e0,Mahindra,Data Analyst,Manufacturing,"safety, quality",5,Tier-1,Mumbai,Expedita incidunt alias commodi sapiente.
+2e5842d6,PwC India,Data Analyst,Consulting,"excel, analysis",3,Tier-2,Nagpur,Fuga sunt ipsa fuga fugiat illo.
+6fcefe2c,KPMG India,Intern,Consulting,"analysis, presentation, strategy",14,Tier-1,Chennai,Dignissimos similique ducimus soluta ipsa amet.
+03278320,KPMG India,Data Analyst,Consulting,"presentation, strategy, excel, analysis",5,Tier-1,Chennai,Molestias incidunt voluptatum inventore omnis vel eveniet.
+21348005,ISRO,Field Intern,Defence,"navigation, embedded, aerospace",4,Tier-2,Jaipur,Ipsa eius incidunt qui.
+a752d9c1,NITI Aayog,Field Intern,Consulting,"analysis, excel",4,Tier-3,Agra,Repudiandae aut similique minus ab earum.
+ffe16e3f,TCS,Data Analyst,IT & Software,"react, docker, dl, aws",8,Tier-1,Mumbai,Voluptatibus sit velit assumenda nulla pariatur placeat.
+79457130,HAL,Data Analyst,Defence,"radar, aerospace, embedded",8,Tier-1,Hyderabad,Tempora quae enim eveniet cum sunt totam.
+30b85977,ICAR,Intern,Agriculture,"foodtech, soil",9,Tier-1,Delhi,Ratione placeat nemo dolor dignissimos nam.
+b2216c29,ICAR,Software Dev,Agriculture,"agri, soil",15,Tier-2,Bhubaneswar,Deserunt dolores accusantium magnam.
+3116eaa9,PwC India,Data Analyst,Consulting,"presentation, strategy",12,Tier-3,Raipur,Atque quis labore repudiandae nobis tenetur.
+9f4de328,ICICI Bank,Field Intern,Banking & Finance,"excel, finance, analysis",10,Tier-1,Delhi,Illum et cumque sit vero consectetur.
+4f30cf90,Fortis,Research Assistant,Healthcare,"public health, clinical, nursing, bio",20,Tier-3,Gaya,Aspernatur laudantium mollitia error totam adipisci perspiciatis.
+5087f389,NIT Trichy,Field Intern,Education,"nlp, research, teaching",16,Tier-1,Chennai,Debitis quam at dicta id.
+36d49290,IFFCO,Intern,Agriculture,"sustainability, agri, foodtech, soil",5,Tier-2,Bhubaneswar,Quod saepe unde reiciendis inventore.
+e39abc5d,NABARD,Software Dev,Agriculture,"foodtech, sustainability, soil, agri",14,Tier-2,Bhubaneswar,Et dolorem quam dolor.
+d9d6b78a,NTPC,Research Assistant,Manufacturing,"quality, cad, safety",15,Tier-3,Varanasi,Rerum officia sapiente dolorem impedit nobis consectetur.
+e8d654c6,NABARD,Software Dev,Agriculture,"sustainability, foodtech, agri, soil",15,Tier-3,Kota,Quasi dolorem laboriosam iste.
+1a2349cf,IIT Delhi,Intern,Education,"research, content, teaching",7,Tier-1,Delhi,Perspiciatis eaque sint quas reprehenderit reiciendis natus eaque.
+ca144a0d,KPMG India,Field Intern,Consulting,"analysis, presentation, strategy",3,Tier-3,Raipur,Architecto facilis ea distinctio ipsam commodi.
+552eb764,Apollo Hospitals,Research Assistant,Healthcare,"clinical, nursing",12,Tier-1,Bangalore,Nostrum animi nulla eveniet ut occaecati.
+4fbe78d3,Apollo Hospitals,Software Dev,Healthcare,"nursing, clinical",16,Tier-2,Lucknow,Iure recusandae sint occaecati minima expedita.
+e6ae60d1,NTPC,Intern,Manufacturing,"safety, automation, cad",7,Tier-1,Mumbai,Ad eos amet repudiandae veniam.
+7f235405,Wipro,Field Intern,IT & Software,"ml, python",1,Tier-2,Bhubaneswar,Possimus aliquid voluptatum officiis rerum commodi sapiente.
+34b6fcf5,Infosys,Data Analyst,IT & Software,"java, react",17,Tier-1,Mumbai,Quis quia temporibus eum vitae ipsum.
+11547026,ICAR,Research Assistant,Agriculture,"sustainability, soil, foodtech, agri",4,Tier-2,Jaipur,Delectus laudantium tempora perspiciatis natus accusamus omnis.
+97e0259e,SBI,Field Intern,Banking & Finance,"excel, accounting, finance",2,Tier-2,Patna,Doloribus laudantium soluta atque numquam nemo maiores.
+9cfecd59,NIT Trichy,Field Intern,Education,"nlp, content, research",2,Tier-1,Hyderabad,Autem eos aliquid officiis facilis.
+f4fd27b0,NIT Trichy,Research Assistant,Education,"nlp, content",11,Tier-1,Mumbai,Quas odio totam temporibus explicabo dolores soluta.
+7ca145d2,NABARD,Intern,Agriculture,"foodtech, agri",10,Tier-2,Jaipur,Quidem aut provident illum consectetur magnam.
+9e3e8743,HDFC Bank,Field Intern,Banking & Finance,"excel, sql",16,Tier-2,Bhubaneswar,Sit ad maiores libero ipsum incidunt.
+9812e2b0,Infosys,Intern,IT & Software,"flask, react",14,Tier-2,Patna,Ducimus veritatis maxime harum vero.
+666514c1,Apollo Hospitals,Intern,Healthcare,"bio, public health, nursing, clinical",6,Tier-3,Raipur,Ea distinctio praesentium facilis unde.
+1dbc4d08,Apollo Hospitals,Research Assistant,Healthcare,"public health, clinical, nursing",5,Tier-2,Lucknow,Consectetur placeat nostrum dolor accusamus nulla.
+c812a658,TCS,Research Assistant,IT & Software,"aws, python, java",2,Tier-3,Gaya,Minima eaque laboriosam ipsum nihil non.
+138fbda9,NITI Aayog,Data Analyst,Consulting,"analysis, presentation, excel",3,Tier-3,Gaya,Accusamus odit quidem reprehenderit.
+04ba4aad,NCERT,Intern,Education,"nlp, content, teaching, research",9,Tier-3,Agra,Labore dicta quis accusantium eum illo.
+24dfdd10,NCERT,Data Analyst,Education,"teaching, nlp, content",3,Tier-2,Nagpur,Rerum cum ipsa.
+da386ca9,IFFCO,Field Intern,Agriculture,"sustainability, soil",3,Tier-3,Raipur,Aperiam quos a labore modi.
+f2a52356,IIT Delhi,Field Intern,Education,"teaching, nlp, content",5,Tier-3,Raipur,Pariatur aliquam nesciunt eum esse porro.
+570f84e7,NCERT,Research Assistant,Education,"content, nlp",10,Tier-2,Patna,Voluptates at reprehenderit possimus ad et ullam.
+85fac681,Axis Bank,Field Intern,Banking & Finance,"analysis, finance, accounting",2,Tier-3,Raipur,Labore odio non voluptatibus atque.
+6b8922fb,NIT Trichy,Intern,Education,"content, nlp",19,Tier-1,Bangalore,Officia quidem vel nobis.
+2f3f342d,ICICI Bank,Data Analyst,Banking & Finance,"risk, sql",7,Tier-1,Delhi,Suscipit quaerat saepe nobis distinctio.
+fdb06c0d,Apollo Hospitals,Intern,Healthcare,"clinical, public health",9,Tier-1,Kolkata,Aliquid voluptas in id.
+fad1694d,AIIMS,Software Dev,Healthcare,"bio, public health",17,Tier-2,Patna,Odio unde ratione rem quidem illo.
+5e39aa97,ICICI Bank,Data Analyst,Banking & Finance,"sql, finance, risk",17,Tier-1,Bangalore,Aliquid eum ex nisi vel est.
+0a9a6919,NCERT,Research Assistant,Education,"research, nlp",15,Tier-1,Bangalore,Quo possimus ex reiciendis beatae nulla.
+05f7513a,IFFCO,Field Intern,Agriculture,"foodtech, sustainability",4,Tier-3,Kota,Labore itaque voluptatum.
+a52ced55,KPMG India,Research Assistant,Consulting,"strategy, analysis, presentation, excel",2,Tier-1,Bangalore,Laborum iure veniam perspiciatis vero molestiae.
+112dd26f,IIT Delhi,Field Intern,Education,"content, teaching",15,Tier-2,Nagpur,Quam consequuntur beatae iure.
+863b1f6b,HDFC Bank,Research Assistant,Banking & Finance,"accounting, risk, sql",11,Tier-2,Nagpur,Quae ipsa eaque minima.
+c6ea6581,Infosys,Research Assistant,IT & Software,"python, sql, aws, flask",20,Tier-3,Agra,Perferendis at voluptates recusandae officia similique tempore.
+730ecfe9,KPMG India,Software Dev,Consulting,"excel, presentation, analysis",18,Tier-1,Hyderabad,Aliquam molestiae in quod.
+4afaa7c4,NCERT,Intern,Education,"teaching, content",5,Tier-2,Bhubaneswar,Harum facere error delectus qui nobis quisquam.
+e6dd0e66,NABARD,Intern,Agriculture,"soil, foodtech, sustainability",5,Tier-3,Kota,Tempora iure laboriosam assumenda sunt aliquam.
+f2aa79c1,DRDO,Intern,Defence,"radar, navigation, aerospace",9,Tier-1,Chennai,Explicabo ex blanditiis beatae earum nisi veniam.
+ec9bc226,Tata Motors,Field Intern,Manufacturing,"robotics, safety, automation, quality",12,Tier-3,Ranchi,Reprehenderit voluptates esse ea nemo excepturi.
+aeb21048,RBI,Software Dev,Banking & Finance,"sql, accounting, finance",9,Tier-3,Gaya,Eaque itaque provident cum perferendis praesentium.
+84d3810d,IIT Delhi,Field Intern,Education,"teaching, nlp, research",3,Tier-2,Jaipur,Reprehenderit distinctio excepturi minus ea.
+db8a9939,NITI Aayog,Field Intern,Consulting,"strategy, presentation, excel",2,Tier-1,Mumbai,Nihil est facere minima.
+dd373c49,HAL,Data Analyst,Defence,"navigation, aerospace, embedded, radar",13,Tier-3,Raipur,Nihil reprehenderit perspiciatis dignissimos eius tenetur sint illo.
+e15eee12,AIIMS,Intern,Healthcare,"clinical, bio",15,Tier-2,Bhubaneswar,Porro soluta a perspiciatis delectus debitis laboriosam.
+2c70df5a,Axis Bank,Field Intern,Banking & Finance,"sql, finance",8,Tier-1,Delhi,Laudantium asperiores temporibus error aliquam excepturi labore voluptate.
+b36a37c3,DRDO,Intern,Defence,"radar, navigation",10,Tier-1,Delhi,Sint quia nobis quos nulla soluta recusandae.
+944416cc,Tata Motors,Field Intern,Manufacturing,"cad, robotics",15,Tier-2,Bhubaneswar,Perspiciatis facere veritatis eos distinctio cumque eveniet.
+3aa1c520,Wipro,Research Assistant,IT & Software,"flask, ml, python, react",2,Tier-1,Delhi,Magnam assumenda rerum culpa commodi nisi.
+7296f71d,DRDO,Software Dev,Defence,"navigation, radar, aerospace, embedded",3,Tier-3,Kota,Error quidem tempore repellendus excepturi.
+f84e2411,SAIL,Field Intern,Manufacturing,"quality, automation, robotics, safety",9,Tier-3,Agra,Quidem vitae temporibus pariatur nulla ut repellendus.
+ba761493,AIIMS,Software Dev,Healthcare,"bio, public health",17,Tier-3,Gaya,Expedita rerum earum voluptatum ducimus ipsa.
+a28f725f,PwC India,Field Intern,Consulting,"analysis, presentation, strategy",6,Tier-1,Delhi,Porro itaque eaque illum ducimus incidunt ipsa.
+14d845ab,Infosys,Field Intern,IT & Software,"flask, docker, python, ml",7,Tier-3,Agra,Iusto reiciendis adipisci accusamus temporibus sit.
+16c4b1bf,SAIL,Research Assistant,Manufacturing,"robotics, cad",6,Tier-1,Delhi,Asperiores quaerat beatae sapiente illo.
+f3574d10,Infosys,Field Intern,IT & Software,"flask, python, ml",4,Tier-1,Mumbai,Quis nesciunt ea aspernatur.
+b3d0cb75,PwC India,Field Intern,Consulting,"strategy, analysis, excel, presentation",20,Tier-1,Kolkata,Provident error necessitatibus recusandae quisquam harum vitae.
+84ed89d5,HCL,Software Dev,IT & Software,"react, python, flask",12,Tier-2,Bhubaneswar,Rerum nisi voluptatibus illum laborum.
+998f4921,Apollo Hospitals,Intern,Healthcare,"nursing, bio",14,Tier-2,Bhubaneswar,Nostrum cum minus deleniti autem consequatur consequuntur.
+b66be7cb,ICICI Bank,Field Intern,Banking & Finance,"risk, analysis",19,Tier-2,Jaipur,Asperiores enim impedit consequatur unde itaque.
+2fea76da,ISRO,Research Assistant,Defence,"aerospace, navigation",4,Tier-3,Raipur,Odio iusto expedita.
+ee53f5e7,Axis Bank,Intern,Banking & Finance,"sql, analysis, accounting",17,Tier-2,Jaipur,Voluptatum rerum cum voluptatum quisquam nesciunt odit a.
+b206d050,HAL,Software Dev,Defence,"radar, aerospace",20,Tier-1,Bangalore,Est quasi velit laborum a veritatis voluptas.
+f567354a,Tata Motors,Research Assistant,Manufacturing,"robotics, safety, quality, automation",14,Tier-2,Lucknow,Occaecati esse inventore ad consectetur laborum praesentium.
+50abe87b,SBI,Intern,Banking & Finance,"finance, risk, accounting, analysis",19,Tier-1,Delhi,Libero est quibusdam impedit facilis pariatur.
+d45cc744,BHEL,Research Assistant,Manufacturing,"automation, safety, robotics",11,Tier-3,Ranchi,Maxime dolorum nisi vel nesciunt laboriosam aperiam.
+9dceebec,HAL,Data Analyst,Defence,"aerospace, navigation, radar",19,Tier-2,Bhubaneswar,Aperiam perferendis enim ipsa aut tenetur perspiciatis.
+fe184a88,TCS,Intern,IT & Software,"java, ml, dl",15,Tier-2,Patna,Odio amet odit aliquid facilis dolores quia asperiores.
+592844a8,NIT Trichy,Software Dev,Education,"content, research, nlp, teaching",19,Tier-2,Jaipur,Nihil totam hic alias ut minima praesentium eius.
+329332f8,HCL,Intern,IT & Software,"react, ml",12,Tier-1,Mumbai,Animi officia quis dolorem repudiandae veniam similique ipsum.
+0ff1c6a8,SBI,Data Analyst,Banking & Finance,"sql, analysis",20,Tier-3,Gaya,Amet nesciunt officia libero in repellendus.
+83cbd307,Mahindra,Data Analyst,Manufacturing,"safety, cad, quality, robotics",11,Tier-1,Delhi,Aliquam repellendus ea qui.
+7c130f52,HCL,Intern,IT & Software,"java, python, dl",9,Tier-1,Mumbai,Atque aperiam illo iste sapiente quisquam deleniti perferendis.
+b5d2eeb8,HAL,Data Analyst,Defence,"radar, navigation, embedded, aerospace",17,Tier-3,Ranchi,Unde voluptate facilis.
+3dadb10a,NABARD,Field Intern,Agriculture,"sustainability, foodtech",4,Tier-2,Bhubaneswar,Unde soluta alias doloribus dolorem id.
+487bbd6f,NIT Trichy,Intern,Education,"content, research",7,Tier-3,Gaya,Delectus expedita debitis inventore culpa sequi.
+f37e9f6d,NITI Aayog,Field Intern,Consulting,"analysis, presentation, excel",3,Tier-2,Lucknow,Eligendi quasi quas illo.
+b165d3e5,DRDO,Data Analyst,Defence,"aerospace, navigation, radar, embedded",14,Tier-3,Varanasi,Commodi quibusdam id.
+afa84716,NTPC,Software Dev,Manufacturing,"robotics, quality",12,Tier-2,Patna,Dignissimos aliquid dolor ad voluptate accusantium dolore.
+269bd5b2,PwC India,Research Assistant,Consulting,"strategy, presentation",14,Tier-1,Mumbai,Pariatur quas illum provident praesentium.
+90e38ab5,PwC India,Software Dev,Consulting,"presentation, analysis",17,Tier-2,Lucknow,Sed architecto cupiditate perferendis ducimus.
+2fb449f1,RBI,Software Dev,Banking & Finance,"finance, excel, accounting",7,Tier-3,Ranchi,Iste numquam quae accusamus deleniti dolores.
+91d6aa74,KPMG India,Software Dev,Consulting,"excel, analysis, presentation",18,Tier-1,Delhi,Maxime quaerat vitae omnis rem debitis possimus.
+54692848,NIT Trichy,Software Dev,Education,"research, nlp, teaching, content",11,Tier-1,Bangalore,Maiores rem doloribus corrupti.
+a62d3c9e,SAIL,Data Analyst,Manufacturing,"automation, robotics",2,Tier-1,Mumbai,Animi velit perferendis quo consequuntur nulla voluptate.
+fb5dc4fa,RBI,Field Intern,Banking & Finance,"analysis, sql",15,Tier-2,Jaipur,Ducimus veniam animi dolorem nostrum labore.
+bfc55356,HDFC Bank,Data Analyst,Banking & Finance,"accounting, analysis",19,Tier-1,Hyderabad,Quidem sed magnam cum deleniti.
+126323de,ICAR,Software Dev,Agriculture,"soil, sustainability, agri",2,Tier-1,Kolkata,Eum consectetur eos repellat sunt veritatis nostrum.
+791fd52e,ICICI Bank,Field Intern,Banking & Finance,"analysis, finance, accounting",7,Tier-3,Varanasi,Quidem enim non vitae distinctio repellendus dicta.
+debea05d,Mahindra,Research Assistant,Manufacturing,"robotics, cad, safety, quality",15,Tier-3,Raipur,Delectus recusandae a.
+b19b9bd4,TCS,Field Intern,IT & Software,"java, flask, aws",8,Tier-2,Nagpur,Distinctio perferendis provident.
+8cf5dce9,IFFCO,Research Assistant,Agriculture,"foodtech, soil, sustainability",9,Tier-1,Kolkata,Id maxime odio eaque nemo nemo porro saepe.
+dfc5b89c,NIT Trichy,Research Assistant,Education,"content, teaching, nlp, research",18,Tier-1,Hyderabad,Doloremque error adipisci commodi necessitatibus.
+9aa0dcf8,BHEL,Research Assistant,Manufacturing,"quality, automation, safety, cad",17,Tier-3,Gaya,Itaque optio voluptate.
+d57900a4,NABARD,Software Dev,Agriculture,"soil, sustainability, foodtech",15,Tier-1,Bangalore,Dicta illo odio iure impedit.
+9e4940a9,IIT Delhi,Intern,Education,"research, nlp, content, teaching",7,Tier-1,Delhi,Recusandae quaerat dicta.
+d2b0e6c7,ISRO,Research Assistant,Defence,"radar, embedded, navigation, aerospace",10,Tier-2,Patna,Ipsam reprehenderit sunt perferendis.
+258489ca,ICAR,Software Dev,Agriculture,"soil, agri",13,Tier-3,Gaya,Asperiores at harum voluptatibus tempora.
+ee70a2ef,RBI,Data Analyst,Banking & Finance,"sql, excel, analysis",20,Tier-1,Hyderabad,Voluptatibus impedit odio laudantium sapiente iusto beatae.
+c5e9a10d,Wipro,Research Assistant,IT & Software,"python, dl, ml",10,Tier-3,Raipur,Voluptatibus quia possimus nostrum reiciendis libero minus iure.
+71f7b26a,HCL,Field Intern,IT & Software,"dl, python",16,Tier-3,Gaya,Dignissimos architecto dicta sapiente inventore.
+d19d81a9,NITI Aayog,Software Dev,Consulting,"strategy, excel, analysis",6,Tier-3,Gaya,Deleniti deleniti nemo debitis quibusdam similique fuga.
+da393ab9,PwC India,Intern,Consulting,"strategy, presentation, analysis, excel",15,Tier-2,Patna,Ea ipsum vero sapiente iure voluptas officia.
+ba82fe55,Apollo Hospitals,Intern,Healthcare,"public health, nursing",13,Tier-1,Bangalore,Excepturi vel et asperiores.
+b7be04cf,AIIMS,Field Intern,Healthcare,"public health, bio",4,Tier-1,Hyderabad,Et porro illo aliquid magni.
+a56dabbb,KPMG India,Data Analyst,Consulting,"strategy, presentation, excel, analysis",14,Tier-1,Chennai,Maiores est velit veritatis voluptates.
+10dd51f3,IIT Delhi,Field Intern,Education,"nlp, content, teaching, research",15,Tier-3,Ranchi,Soluta quam expedita vel earum eveniet laboriosam.
+455f767b,ICICI Bank,Software Dev,Banking & Finance,"risk, analysis",3,Tier-2,Lucknow,Rerum modi natus temporibus sunt itaque.
+377b0ae7,NCERT,Field Intern,Education,"nlp, research",16,Tier-3,Kota,Optio accusamus quos quisquam porro eaque ratione cum.
+cc0af9e7,Infosys,Intern,IT & Software,"ml, sql, python",5,Tier-1,Chennai,Laborum sed ex animi voluptatibus.
+863dcdc3,HDFC Bank,Field Intern,Banking & Finance,"sql, risk",13,Tier-3,Gaya,Rem labore earum excepturi.
+fe2250e1,NTPC,Software Dev,Manufacturing,"cad, safety",19,Tier-2,Jaipur,Occaecati molestiae quibusdam nulla.
+84b01b78,SAIL,Intern,Manufacturing,"automation, safety, quality",15,Tier-3,Ranchi,Impedit officia ab.
+a437bc64,ICAR,Data Analyst,Agriculture,"sustainability, foodtech, soil",1,Tier-3,Gaya,Blanditiis at architecto non corrupti.
+e2a63434,IIT Delhi,Research Assistant,Education,"nlp, research",1,Tier-2,Jaipur,Rerum quaerat officiis libero beatae quo cum.
+f4002e6e,HDFC Bank,Software Dev,Banking & Finance,"sql, analysis, risk",17,Tier-2,Lucknow,Eveniet autem consequuntur vero tenetur iure soluta.
+1a256037,NTPC,Data Analyst,Manufacturing,"cad, automation, robotics, safety",7,Tier-3,Agra,Reprehenderit porro cum ex numquam dolorem ratione.
+f9eab808,Axis Bank,Research Assistant,Banking & Finance,"analysis, sql, excel",9,Tier-2,Nagpur,Nisi rem ex modi dicta esse.
+d4610e31,BHEL,Research Assistant,Manufacturing,"cad, quality, robotics",3,Tier-1,Hyderabad,Atque a animi possimus.
+4dca1307,Accenture,Research Assistant,IT & Software,"java, sql, dl, react",11,Tier-1,Chennai,Minima iure sunt voluptate autem.
+e52c2955,NCERT,Research Assistant,Education,"content, research, teaching",8,Tier-2,Bhubaneswar,Aperiam voluptate consectetur rem.
+f2e73086,NTPC,Research Assistant,Manufacturing,"automation, safety, robotics",7,Tier-2,Bhubaneswar,Quidem sint ipsum delectus.
+ad3e8967,Infosys,Research Assistant,IT & Software,"sql, ml, flask",20,Tier-3,Varanasi,Tempora fugiat numquam delectus.
+ff691444,ICAR,Research Assistant,Agriculture,"agri, soil, foodtech",5,Tier-3,Raipur,Explicabo provident atque ipsa sed ex dignissimos.
+958b138f,PwC India,Intern,Consulting,"excel, analysis, presentation",11,Tier-3,Ranchi,Ratione est tempore accusantium consequatur.
+961c5ac5,NIT Trichy,Research Assistant,Education,"content, teaching",13,Tier-3,Gaya,Sed esse libero hic nesciunt eum.
+ec4b829c,IIT Delhi,Software Dev,Education,"content, research, nlp, teaching",4,Tier-3,Kota,Placeat occaecati esse vitae fuga dolorem.
+fc249912,Fortis,Software Dev,Healthcare,"bio, nursing, clinical",17,Tier-1,Hyderabad,Quas hic doloribus fuga iure.
+17d237f1,HCL,Software Dev,IT & Software,"java, python, ml, react",1,Tier-2,Nagpur,Accusantium dolor nihil at explicabo ab.
+a8481272,Fortis,Data Analyst,Healthcare,"public health, clinical, nursing",16,Tier-2,Jaipur,Labore expedita cum voluptates ea aspernatur.
+74d432cb,DRDO,Research Assistant,Defence,"navigation, aerospace, embedded",1,Tier-1,Hyderabad,Quas voluptatem rerum incidunt aspernatur quidem sed.
+1c25d61e,NTPC,Research Assistant,Manufacturing,"robotics, safety, quality, cad",17,Tier-2,Lucknow,Ipsum illo voluptates porro voluptatem.
+0cacc478,Apollo Hospitals,Intern,Healthcare,"clinical, bio, public health",5,Tier-3,Ranchi,Repellat eaque accusantium id velit.
+1eded6f6,AIIMS,Intern,Healthcare,"nursing, bio, public health",1,Tier-2,Patna,Deserunt suscipit porro nemo temporibus odio.
+217ed1aa,NIT Trichy,Software Dev,Education,"teaching, content, research",5,Tier-2,Nagpur,Iste libero numquam distinctio.
+811fdc9f,IFFCO,Software Dev,Agriculture,"foodtech, sustainability",12,Tier-2,Lucknow,Recusandae occaecati laboriosam.
+28e9f10e,HCL,Research Assistant,IT & Software,"docker, aws, sql",8,Tier-2,Nagpur,Sint dolore praesentium doloremque veniam assumenda quia.
+d1a03dca,BHEL,Data Analyst,Manufacturing,"quality, cad, robotics",9,Tier-2,Patna,Dicta perferendis odit nostrum repellat.
+0d99202f,Wipro,Intern,IT & Software,"aws, react",19,Tier-2,Patna,Eum inventore laboriosam.
+daf38ac5,ICICI Bank,Data Analyst,Banking & Finance,"accounting, excel",14,Tier-3,Varanasi,At quasi velit placeat natus dolore atque.
+fe5c3f8e,HAL,Data Analyst,Defence,"embedded, navigation, aerospace",10,Tier-2,Bhubaneswar,Illum aliquid fugit corrupti maxime.
+250ef695,Apollo Hospitals,Intern,Healthcare,"nursing, public health, bio, clinical",18,Tier-3,Raipur,Ad excepturi minima aspernatur voluptatum amet.
+5fcdd109,NIT Trichy,Intern,Education,"nlp, teaching, content, research",3,Tier-3,Varanasi,Repellat vitae autem dolorem deleniti sequi.
+9c056bc6,Fortis,Data Analyst,Healthcare,"bio, public health, clinical",6,Tier-2,Lucknow,A laboriosam ipsum commodi itaque tenetur.
+56c8f126,PwC India,Research Assistant,Consulting,"strategy, excel, analysis",3,Tier-2,Patna,Ab consectetur maiores qui officiis vel.
+83e9389b,NCERT,Field Intern,Education,"teaching, nlp, research",2,Tier-2,Lucknow,Fuga nesciunt unde eveniet sint labore optio amet.
+1bcc87e5,IIT Delhi,Data Analyst,Education,"content, nlp, research, teaching",15,Tier-1,Bangalore,Numquam animi delectus placeat.
+27a92153,Accenture,Intern,IT & Software,"java, flask",5,Tier-3,Varanasi,Ut fugit fuga repellendus aspernatur ab voluptate totam.
+1e700a30,HAL,Software Dev,Defence,"navigation, aerospace, radar, embedded",4,Tier-3,Varanasi,Ut earum eveniet modi asperiores dignissimos ipsam assumenda.
+0f27445d,NTPC,Field Intern,Manufacturing,"safety, automation, robotics",11,Tier-1,Chennai,Debitis quasi facere.
+4554572f,NIT Trichy,Field Intern,Education,"teaching, research",11,Tier-1,Kolkata,Optio facere placeat error.
+bbe34c71,ICAR,Data Analyst,Agriculture,"agri, sustainability",1,Tier-1,Hyderabad,Delectus eligendi voluptas neque corporis.
+79174904,HDFC Bank,Software Dev,Banking & Finance,"excel, risk",9,Tier-1,Bangalore,Enim inventore ea commodi.
+6c7a95c1,NTPC,Software Dev,Manufacturing,"safety, cad, robotics, automation",12,Tier-1,Delhi,Dolorem dolore magni placeat laborum molestiae dolor pariatur.
+ebf00ff7,SAIL,Intern,Manufacturing,"safety, quality, automation, robotics",20,Tier-3,Agra,Amet molestiae eligendi quos odit.
+97da4c62,Wipro,Field Intern,IT & Software,"react, sql, ml, python",12,Tier-2,Lucknow,Voluptate magnam et quia soluta.
+e3a746f0,IFFCO,Field Intern,Agriculture,"foodtech, soil, agri, sustainability",4,Tier-2,Jaipur,Ab quas neque quos.
+338465f0,RBI,Field Intern,Banking & Finance,"excel, accounting",18,Tier-2,Patna,Non corrupti amet illo dignissimos cumque tempore.
+545c5313,IIT Delhi,Software Dev,Education,"nlp, research, teaching",12,Tier-1,Kolkata,Velit magnam ullam eveniet dolorem id.
+c6f67181,IFFCO,Research Assistant,Agriculture,"foodtech, soil, agri",2,Tier-2,Patna,Hic quae architecto quas ipsum.
+dcb9ca29,Wipro,Field Intern,IT & Software,"sql, dl, flask",2,Tier-1,Mumbai,Voluptatum ab repellendus suscipit.
+9757abb4,SBI,Data Analyst,Banking & Finance,"accounting, sql, risk",19,Tier-1,Kolkata,Id iure dignissimos ullam quam ullam dignissimos.
+8b598039,HAL,Intern,Defence,"embedded, aerospace, navigation, radar",1,Tier-1,Bangalore,Doloremque labore quidem iure et dolores dolorem.
+75cf03eb,TCS,Field Intern,IT & Software,"dl, sql, python",14,Tier-1,Delhi,Provident temporibus numquam velit eos corporis.
+355f0783,IIT Delhi,Research Assistant,Education,"nlp, content",3,Tier-3,Kota,Omnis odit fugiat quasi.
+7b75c9ac,ISRO,Software Dev,Defence,"embedded, aerospace, navigation",16,Tier-3,Raipur,Quibusdam natus iusto sit expedita dolores.
+2dfcb24a,NIT Trichy,Field Intern,Education,"teaching, research, content",12,Tier-2,Bhubaneswar,Corporis velit quis non nihil sapiente quidem magnam.
+3f28275a,Accenture,Field Intern,IT & Software,"java, python, dl",2,Tier-2,Nagpur,Possimus sed consequuntur porro aliquam.
+efcb7576,ISRO,Data Analyst,Defence,"radar, aerospace",11,Tier-2,Bhubaneswar,Quis nemo vitae labore ea repellat debitis.
+53ece046,SBI,Field Intern,Banking & Finance,"accounting, finance",15,Tier-1,Delhi,Animi nihil vitae quasi voluptatibus odit.
+6930a3e1,TCS,Research Assistant,IT & Software,"python, sql",16,Tier-2,Bhubaneswar,Assumenda quam alias cumque ut quos inventore.
+04f4afd0,NCERT,Intern,Education,"nlp, research, content, teaching",2,Tier-2,Patna,Autem id repellendus consequatur suscipit.
+5c108b7a,Accenture,Field Intern,IT & Software,"java, python, ml, react",14,Tier-1,Kolkata,Iste architecto veniam tenetur.
+0c4cc040,NITI Aayog,Intern,Consulting,"excel, presentation",11,Tier-2,Patna,Ipsa facere magni.
+ba941c6e,NITI Aayog,Intern,Consulting,"excel, strategy",15,Tier-2,Nagpur,Quos repudiandae hic perferendis alias.
+61160adc,SBI,Software Dev,Banking & Finance,"excel, finance",18,Tier-2,Lucknow,Nostrum iusto veniam exercitationem.
+35552f63,Fortis,Research Assistant,Healthcare,"clinical, bio",10,Tier-2,Jaipur,Saepe reiciendis dicta error explicabo soluta odio ducimus.
+834456bc,PwC India,Software Dev,Consulting,"presentation, strategy",7,Tier-2,Nagpur,Harum repellat perspiciatis quam quos voluptas.
+d2cc77e2,SAIL,Data Analyst,Manufacturing,"automation, safety, robotics",9,Tier-3,Raipur,Iure quis maiores tempore est asperiores.
+b49cef26,SBI,Research Assistant,Banking & Finance,"excel, finance, risk",12,Tier-2,Lucknow,Eligendi dignissimos officia voluptatem quis.
+e990b7ea,HCL,Software Dev,IT & Software,"ml, flask, aws",2,Tier-1,Bangalore,Consequuntur distinctio ex culpa.
+bbfe99c1,NCERT,Research Assistant,Education,"research, teaching, content",18,Tier-3,Varanasi,At nisi laudantium voluptas expedita.
+5e9bb826,NTPC,Data Analyst,Manufacturing,"robotics, safety",2,Tier-1,Kolkata,Illo id eius sint tenetur incidunt.
+af68e14b,Accenture,Research Assistant,IT & Software,"sql, flask, docker, python",4,Tier-1,Chennai,Architecto dolore cumque sequi voluptatem sint laboriosam consequatur.
+15f11cc5,ISRO,Research Assistant,Defence,"radar, embedded, navigation, aerospace",10,Tier-1,Hyderabad,Perspiciatis deserunt tenetur.
+99cebc2f,BHEL,Field Intern,Manufacturing,"robotics, automation",6,Tier-1,Hyderabad,Aperiam mollitia doloremque natus non placeat.
+67799071,NCERT,Data Analyst,Education,"content, nlp, teaching, research",20,Tier-1,Chennai,Distinctio nostrum tenetur aspernatur repellat culpa ex quaerat.
+2931ddca,ISRO,Field Intern,Defence,"radar, aerospace",18,Tier-1,Mumbai,Fugiat velit fuga debitis inventore dolore nisi.
+a4051c09,NCERT,Data Analyst,Education,"nlp, teaching, content, research",1,Tier-1,Mumbai,Fuga libero minus exercitationem voluptatum.
+0320f407,PwC India,Research Assistant,Consulting,"presentation, analysis, excel",2,Tier-1,Chennai,Eaque modi eaque atque doloribus.
+7386b50b,NIT Trichy,Field Intern,Education,"content, nlp",12,Tier-2,Jaipur,Ullam fugit aut aspernatur.
+06e2ce6e,ICICI Bank,Field Intern,Banking & Finance,"excel, accounting",3,Tier-1,Delhi,Voluptatibus aut praesentium quod quis magnam minima.
+22ede124,NABARD,Software Dev,Agriculture,"soil, sustainability",9,Tier-1,Bangalore,Alias nisi reiciendis dolore deserunt sapiente.
+ba697e22,TCS,Software Dev,IT & Software,"docker, dl",14,Tier-1,Bangalore,Quis consectetur sit quia nemo.
+268c59ff,ICAR,Data Analyst,Agriculture,"sustainability, soil",16,Tier-3,Varanasi,Architecto vero totam qui mollitia saepe tempore.
+f73ee268,Axis Bank,Software Dev,Banking & Finance,"analysis, accounting",3,Tier-2,Patna,Assumenda quod omnis et nihil quasi consequuntur.
+6915b921,HDFC Bank,Research Assistant,Banking & Finance,"sql, risk, excel, finance",17,Tier-3,Raipur,Explicabo fugiat enim sed optio explicabo quibusdam.
+d85a7241,AIIMS,Intern,Healthcare,"clinical, public health, nursing, bio",14,Tier-1,Kolkata,Voluptatem aliquam hic velit facilis praesentium iste.
+02449ad2,IIT Delhi,Field Intern,Education,"teaching, research, nlp",19,Tier-3,Agra,Quidem dolorem voluptas rem dolorem.
+25d8f65a,Fortis,Intern,Healthcare,"bio, nursing, clinical",12,Tier-2,Jaipur,Sunt nihil optio rem omnis occaecati.
+1c12adea,Axis Bank,Intern,Banking & Finance,"analysis, risk, finance",2,Tier-2,Lucknow,Vitae eaque molestiae pariatur dignissimos neque.
+c39c2295,ISRO,Research Assistant,Defence,"radar, navigation, aerospace, embedded",10,Tier-1,Mumbai,Sequi eius tempore aut fugit tempore aspernatur.
+f4fd1a0e,Tata Motors,Software Dev,Manufacturing,"safety, automation",2,Tier-2,Patna,Reiciendis alias neque impedit repudiandae cumque excepturi reprehenderit.
+30f6dbc5,Fortis,Field Intern,Healthcare,"public health, bio, clinical, nursing",19,Tier-3,Kota,Expedita voluptatum unde libero earum consequuntur dolores.
+aa3fd54e,DRDO,Research Assistant,Defence,"radar, aerospace, embedded, navigation",10,Tier-3,Ranchi,Fugit architecto illo culpa id voluptatem.
+7ab62879,Tata Motors,Software Dev,Manufacturing,"safety, quality, cad, automation",8,Tier-2,Nagpur,Consequatur cupiditate at excepturi voluptatum odio.
+7817002c,DRDO,Intern,Defence,"navigation, radar, embedded",11,Tier-1,Chennai,Eligendi consequuntur ipsa ut a illo atque cupiditate.
+fed8186f,DRDO,Intern,Defence,"navigation, radar, embedded, aerospace",17,Tier-3,Agra,Harum at illum asperiores praesentium libero.
+4af4bf78,TCS,Field Intern,IT & Software,"docker, flask, react",19,Tier-2,Patna,Iusto inventore maiores assumenda laudantium.
+46ad073b,HAL,Data Analyst,Defence,"radar, navigation, aerospace",2,Tier-1,Delhi,Illo inventore quam ex nostrum.
