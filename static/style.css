@@ -1,8 +1,195 @@
-body { font-family: Arial, sans-serif; margin: 20px; }
-header { margin-bottom: 20px; }
-textarea { width: 100%; }
-table { border-collapse: collapse; margin-top: 20px; width: 100%; }
-table, th, td { border: 1px solid #ccc; padding: 6px; }
-body { background-color: #f9fafc; }
-.card { border-radius: 12px; }
-.table th, .table td { vertical-align: middle; }
+/* General reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Roboto, sans-serif;
+  background-color: #f7f9fc;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header */
+.site-header {
+  background: #003366;
+  color: #fff;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.site-header a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: 500;
+}
+
+.site-header a:hover {
+  text-decoration: underline;
+}
+
+.brand {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+/* Container */
+.container {
+  max-width: 1100px;
+  margin: 30px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* Buttons */
+.btn, .btn-primary, .btn-success {
+  display: inline-block;
+  padding: 8px 16px;
+  margin: 5px 0;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: background 0.3s;
+}
+
+.btn {
+  background: #555;
+  color: #fff;
+}
+
+.btn-primary {
+  background: #007bff;
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background: #0056b3;
+}
+
+.btn-success {
+  background: #28a745;
+  color: #fff;
+}
+
+.btn-success:hover {
+  background: #1e7e34;
+}
+
+/* Tables */
+table.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+.table th, .table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+.table th {
+  background: #f1f1f1;
+}
+
+.table tr:nth-child(even) {
+  background: #fafafa;
+}
+
+/* Forms */
+form label {
+  display: block;
+  margin-top: 12px;
+  font-weight: 600;
+}
+
+form input, form select, form textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 4px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form button {
+  margin-top: 15px;
+}
+
+/* Footer */
+.site-footer {
+  text-align: center;
+  padding: 12px;
+  margin-top: 30px;
+  background: #f1f1f1;
+  color: #666;
+  font-size: 0.9rem;
+  border-top: 1px solid #ddd;
+}
+
+/* Dashboard Layout */
+#plots {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.navbar-brand {
+  font-size: 1.4rem;
+}
+
+.card {
+  border-radius: 12px;
+}
+
+.table thead th {
+  font-weight: 600;
+}
+
+.footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+.btn {
+  border-radius: 8px;
+  transition: all 0.2s ease-in-out;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+form .form-label {
+  font-weight: 500;
+}
+
+form .form-control, form .form-select {
+  border-radius: 8px;
+  box-shadow: none;
+  transition: border-color 0.2s ease-in-out;
+}
+
+form .form-control:focus, form .form-select:focus {
+  border-color: #0d6efd;
+  box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.25);
+}
+
+.card-header {
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+textarea {
+  resize: vertical;
+}
