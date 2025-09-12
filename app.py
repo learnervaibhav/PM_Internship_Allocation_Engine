@@ -14,7 +14,6 @@ import lightgbm as lgb
 from flask import Flask, render_template, request, redirect, url_for, flash, send_file, jsonify
 from werkzeug.utils import secure_filename
 
-# local modules
 import utils
 import engine
 
@@ -36,14 +35,12 @@ APPLICANTS_CSV = DATA_DIR / "Applicants.csv"
 INTERNSHIPS_CSV = DATA_DIR / "Internships.csv"
 MATCHES_CSV = DATA_DIR / "Matches.csv"
 
-# Candidate model artifacts (prefer LTR text model, else sklearn joblib)
+
 LGB_LTR_PATH = MODELS_DIR / "ltr_model.txt"
 SKL_MODEL_PATH = MODELS_DIR / "best_model.pkl"
 ART_PATH = MODELS_DIR / "artifacts.joblib"
 
-# -----------------------
-# Flask app
-# -----------------------
+
 app = Flask(__name__, template_folder=str(TEMPLATES_DIR), static_folder=str(STATIC_DIR))
 app.secret_key = "vaibhav"
 
