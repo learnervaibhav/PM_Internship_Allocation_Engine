@@ -37,7 +37,7 @@ int_texts = ["; ".join(I.loc[I["InternshipID"]==iid,"req_skills_list"].values[0]
 int_embs = model.encode(int_texts, convert_to_numpy=True, normalize_embeddings=True)
 int_emb_map = dict(zip(unique_ints, int_embs.tolist()))
 
-# 5) build features for matches (efficient)
+# 5) build features for matches 
 def emb_sim(aid, iid):
     a = np.array(app_emb_map.get(aid))
     b = np.array(int_emb_map.get(iid))

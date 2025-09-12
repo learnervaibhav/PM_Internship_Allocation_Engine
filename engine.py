@@ -64,7 +64,7 @@ def extract_features(profile, internships_df):
     return feature_df, sims, edu_score
 
 # -----------------------------
-# 4. Scoring with ML Model
+# 4. Scoring 
 # -----------------------------
 def score_applicant(profile, internships_df, w_sim=0.75, w_edu=0.25):
     features, sims, edu_score = extract_features(profile, internships_df)
