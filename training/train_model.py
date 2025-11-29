@@ -6,9 +6,9 @@ from sklearn.model_selection import GroupKFold, train_test_split
 import optuna
 from sklearn.metrics import ndcg_score
 
-DATA_DIR = "E:\Vaibhav_Baranwal\Vaibhav_Projects\pm_internship_ai\venv\pm_internship_ai\data"
-MODEL_DIR = "E:\Vaibhav_Baranwal\Vaibhav_Projects\pm_internship_ai\venv\pm_internship_ai\models"
-# os.makedirs(MODEL_DIR, exist_ok=True)
+DATA_DIR = r"E:\Vaibhav_Baranwal\Vaibhav_Projects\pm_internship_ai\data"
+MODEL_DIR = r"E:\Vaibhav_Baranwal\Vaibhav_Projects\pm_internship_ai\models"
+os.makedirs(MODEL_DIR, exist_ok=True)
 
 # 1) load
 A = pd.read_csv(os.path.join(DATA_DIR,"Applicants.csv"))
@@ -44,8 +44,12 @@ def emb_sim(aid, iid):
     return float(np.dot(a,b))
 
 def overlap(aid, iid):
-    a = set(app_map[aid]["skills"].lower().split(", "))
-    b = set(int_map[iid]["Required_Skills"].lower().split(", "))
+    app_skills_str = app_map[aid].get("Skills", "")
+    int_skills_str = int_map[iid].get("Required_Skills", "")
+    if pd.isna(app_skills_str) or pd.isna(int_skills_str):
+        return 0.0
+    a = set(str(app_skills_str).lower().split(", "))
+    b = set(str(int_skills_str).lower().split(", "))
     return len(a & b)/max(1,len(b))
 
 M["emb_sim"] = M.apply(lambda r: emb_sim(r["ApplicantID"], r["InternshipID"]), axis=1)

@@ -6,6 +6,7 @@ import joblib
 import traceback
 from pathlib import Path
 
+import numpy as np
 import pandas as pd
 import plotly.express as px
 import plotly
@@ -128,7 +129,7 @@ def apply():
             resume_text = ""
             if "resume" in request.files:
                 f = request.files["resume"]
-                if f and utils.allowed_file(f.filename):
+                if f and f.filename and utils.allowed_file(f.filename):
                     filename = secure_filename(f.filename)
                     path = UPLOADS_DIR / filename
                     f.save(str(path))
@@ -194,7 +195,8 @@ def ranks_for_internship(internship_id):
     try:
         # utils.compute_features_for_pair returns a numpy array - we use apply to get rows
         feats_df = candidates.apply(lambda r: utils.compute_features_for_pair(r, row), axis=1, result_type="expand")
-        feats_df.columns = FEATURE_COLS
+        if FEATURE_COLS is not None:
+            feats_df.columns = FEATURE_COLS
     except Exception:
         # fallback: use engine scoring if features utility fails
         app.logger.warning("Feature computation failed; falling back to engine scoring.")
@@ -218,7 +220,7 @@ def ranks_for_internship(internship_id):
             scores = None
     if scores is None:
         # fallback scoring: normalized emb_sim if present
-        if "emb_sim" in feats_df.columns:
+        if feats_df.columns is not None and "emb_sim" in feats_df.columns:
             s = feats_df["emb_sim"].values.astype(float)
             scores = (s - s.min()) / max(1e-12, (s.max() - s.min()))
         else:
@@ -227,7 +229,7 @@ def ranks_for_internship(internship_id):
             return render_template("ranks_fallback.html", internship=row.to_dict(), results=results)
 
     # attach scores and sort
-    candidates = candidates.assign(score=scores)
+    candidates = candidates.assign(score=list(np.asarray(scores).ravel()))
     ranked = candidates.sort_values("score", ascending=False).head(200)
     return render_template("ranks.html", internship=row.to_dict(), candidates=ranked.to_dict(orient="records"))
 
@@ -246,7 +248,8 @@ def download_ranks(internship_id):
         candidates = candidates[candidates["Sector"] == row.get("Sector", candidates["Sector"].iloc[0])]
 
     feats_df = candidates.apply(lambda r: utils.compute_features_for_pair(r, row), axis=1, result_type="expand")
-    feats_df.columns = FEATURE_COLS
+    if FEATURE_COLS is not None:
+        feats_df.columns = FEATURE_COLS
 
     # score
     scores = None
@@ -260,14 +263,14 @@ def download_ranks(internship_id):
             scores = lgb_ltr.predict(feats_df.values)
         except Exception:
             scores = None
-    if scores is None and "emb_sim" in feats_df.columns:
+    if scores is None and feats_df.columns is not None and "emb_sim" in feats_df.columns:
         s = feats_df["emb_sim"].values.astype(float)
         scores = (s - s.min()) / max(1e-12, (s.max() - s.min()))
     if scores is None:
         flash("Unable to compute scores at this time.", "danger")
         return redirect(url_for("ranks_index"))
 
-    candidates = candidates.assign(score=scores)
+    candidates = candidates.assign(score=list(np.asarray(scores).ravel()))
     ranked = candidates.sort_values("score", ascending=False)
     buf = io.StringIO()
     ranked.to_csv(buf, index=False)
