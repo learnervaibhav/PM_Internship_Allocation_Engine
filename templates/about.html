@@ -1,18 +1,160 @@
 {% extends "base.html" %}
 {% block content %}
-  <h2 class="mb-4">About Us</h2>
-  <p>
-    The <strong>PM Internship Scheme</strong> is designed to connect students with internship opportunities 
-    in IT and allied sectors. This AI-powered allocation system ensures fair and transparent distribution 
-    of internships based on eligibility, skills, and priority rules.
-  </p>
-  <p>
-    Features include:
-    <ul>
-      <li>AI-driven resume parsing and skill extraction</li>
-      <li>Multi-layered filtering (age, income, experience, category)</li>
-      <li>Ranking based on skills and education</li>
-      <li>Live performance monitoring and dashboards</li>
-    </ul>
-  </p>
+<div class="container animate-fade-in-up">
+  <!-- Hero Section -->
+  <div class="text-center mb-5">
+    <h1 class="display-4 fw-bold mb-3">About Our Platform</h1>
+    <p class="fs-5 text-muted">Revolutionizing internship allocation through AI-powered intelligent matching</p>
+  </div>
+
+  <!-- Mission Statement -->
+  <div class="row justify-content-center mb-5">
+    <div class="col-lg-8">
+      <div class="card">
+        <div class="card-body text-center p-5">
+          <svg width="64" height="64" viewBox="0 0 24 24" fill="none" style="color: var(--primary-blue); margin-bottom: 2rem;">
+            <path d="M12 2L13.09 8.26L22 9L13.09 9.74L12 16L10.91 9.74L2 9L10.91 8.26L12 2Z" stroke="currentColor" stroke-width="2"/>
+          </svg>
+          <h3 class="mb-4">Our Mission</h3>
+          <p class="fs-5 text-muted">
+            The PM Internship Scheme is designed to connect talented students with meaningful 
+            internship opportunities in IT and allied sectors. Our AI-powered allocation system 
+            ensures fair, transparent, and efficient distribution of opportunities based on 
+            merit, skills, and eligibility criteria.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Key Features -->
+  <div class="mb-5">
+    <h3 class="text-center mb-5">Platform Features</h3>
+    <div class="row g-4">
+      <div class="col-md-6 col-lg-3">
+        <div class="card h-100 text-center">
+          <div class="card-body">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" style="color: var(--primary-blue); margin-bottom: 1rem;">
+              <path d="M9 12L11 14L15 10M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke="currentColor" stroke-width="2"/>
+            </svg>
+            <h5>AI-Driven Matching</h5>
+            <p class="text-muted small">Advanced machine learning algorithms analyze resumes and extract relevant skills automatically</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3">
+        <div class="card h-100 text-center">
+          <div class="card-body">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" style="color: var(--success-color); margin-bottom: 1rem;">
+              <path d="M7 13L10 16L17 9" stroke="currentColor" stroke-width="2"/>
+            </svg>
+            <h5>Multi-Layer Filtering</h5>
+            <p class="text-muted small">Comprehensive eligibility checks based on age, income, experience, and category</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3">
+        <div class="card h-100 text-center">
+          <div class="card-body">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" style="color: var(--warning-color); margin-bottom: 1rem;">
+              <path d="M12 2L15.09 8.26L22 9L15.09 9.74L12 22L8.91 9.74L2 9L8.91 8.26L12 2Z" stroke="currentColor" stroke-width="2"/>
+            </svg>
+            <h5>Merit-Based Ranking</h5>
+            <p class="text-muted small">Intelligent scoring system based on skills, education, and relevance to opportunity</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3">
+        <div class="card h-100 text-center">
+          <div class="card-body">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" style="color: var(--danger-color); margin-bottom: 1rem;">
+              <rect x="3" y="3" width="18" height="18" rx="2" ry="2" stroke="currentColor" stroke-width="2"/>
+              <path d="M9 9H15M9 15H12" stroke="currentColor" stroke-width="2"/>
+            </svg>
+            <h5>Real-time Analytics</h5>
+            <p class="text-muted small">Live performance monitoring with comprehensive dashboards and reporting</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- How it Works -->
+  <div class="mb-5">
+    <h3 class="text-center mb-5">How It Works</h3>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="text-center">
+          <div class="mb-3">
+            <span class="badge bg-primary rounded-circle p-3" style="font-size: 1.25rem;">1</span>
+          </div>
+          <h5>Apply Online</h5>
+          <p class="text-muted">Submit your application with resume and required details through our streamlined form</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="text-center">
+          <div class="mb-3">
+            <span class="badge bg-primary rounded-circle p-3" style="font-size: 1.25rem;">2</span>
+          </div>
+          <h5>AI Processing</h5>
+          <p class="text-muted">Our AI system analyzes your profile, extracts skills, and matches you with opportunities</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="text-center">
+          <div class="mb-3">
+            <span class="badge bg-primary rounded-circle p-3" style="font-size: 1.25rem;">3</span>
+          </div>
+          <h5>Get Matched</h5>
+          <p class="text-muted">Receive your personalized ranking and connect with the best internship opportunities</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Statistics -->
+  <div class="text-center mb-5">
+    <div class="row g-4">
+      <div class="col-6 col-md-3">
+        <div class="stats-card">
+          <div class="stats-number">10K+</div>
+          <div class="stats-label">Applications</div>
+        </div>
+      </div>
+      <div class="col-6 col-md-3">
+        <div class="stats-card">
+          <div class="stats-number">95%</div>
+          <div class="stats-label">Success Rate</div>
+        </div>
+      </div>
+      <div class="col-6 col-md-3">
+        <div class="stats-card">
+          <div class="stats-number">500+</div>
+          <div class="stats-label">Companies</div>
+        </div>
+      </div>
+      <div class="col-6 col-md-3">
+        <div class="stats-card">
+          <div class="stats-number">24/7</div>
+          <div class="stats-label">Support</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CTA Section -->
+  <div class="text-center">
+    <div class="card">
+      <div class="card-body p-5">
+        <h4 class="mb-3">Ready to Start Your Journey?</h4>
+        <p class="text-muted mb-4">Join thousands of students who have found their perfect internship match</p>
+        <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+          <a href="{{ url_for('apply') }}" class="btn btn-success btn-lg">Apply Now</a>
+          <a href="{{ url_for('dashboard') }}" class="btn btn-primary btn-lg">View Analytics</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 {% endblock %}

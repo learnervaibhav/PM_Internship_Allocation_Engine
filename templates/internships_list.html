@@ -1,31 +1,146 @@
 {% extends "base.html" %}
 {% block content %}
-  <div class="container">
-    <h2 class="mb-4 text-primary">Available Internships</h2>
+<div class="container animate-fade-in-up">
+  <!-- Header Section -->
+  <div class="mb-5">
+    <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem;">
+      <div>
+        <h2 class="display-6 fw-bold mb-2">Available Opportunities</h2>
+        <p class="text-muted fs-5">Explore internship rankings across different companies and roles</p>
+      </div>
+      <a href="{{ url_for('apply') }}" class="btn btn-success">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" style="margin-right: 8px;">
+          <path d="M16 21V5C16 4.4 16.4 4 17 4S18 4.4 18 5V21M6 21V5C6 4.4 6.4 4 7 4S8 4.4 8 5V21" stroke="currentColor" stroke-width="2"/>
+          <path d="M12 17V9" stroke="currentColor" stroke-width="2"/>
+        </svg>
+        Apply Now
+      </a>
+    </div>
+  </div>
 
-    {% if internships %}
-      <div class="row g-4">
-        {% for int in internships %}
-          <div class="col-md-6 col-lg-4">
-            <div class="card h-100 shadow-sm">
-              <div class="card-body">
-                <h5 class="card-title text-dark">{{ int.Company }}</h5>
-                <p class="card-text">
-                  <strong>Role:</strong> {{ int.Role }}<br>
-                  <strong>Sector:</strong> {{ int.Sector }}<br>
-                  <strong>Location:</strong> {{ int.City }}
-                </p>
+  {% if internships %}
+    <!-- Summary Stats -->
+    <div class="row g-3 mb-5">
+      <div class="col-md-4">
+        <div class="stats-card">
+          <div class="stats-number">{{ internships|length }}</div>
+          <div class="stats-label">Available Positions</div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="stats-card">
+          <div class="stats-number">{{ internships|map(attribute='Sector')|unique|list|length }}</div>
+          <div class="stats-label">Industry Sectors</div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="stats-card">
+          <div class="stats-number">{{ internships|map(attribute='City')|unique|list|length }}</div>
+          <div class="stats-label">Cities</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Internship Cards -->
+    <div class="row g-4">
+      {% for int in internships %}
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100">
+            <div class="card-body">
+              <div style="display: flex; align-items: flex-start; justify-content: space-between; margin-bottom: 1rem;">
+                <div style="flex: 1;">
+                  <h5 class="card-title mb-1">{{ int.Company }}</h5>
+                  <p class="text-muted small mb-0">{{ int.InternshipID }}</p>
+                </div>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" style="color: var(--primary-blue);">
+                  <rect x="2" y="3" width="20" height="14" rx="2" ry="2" stroke="currentColor" stroke-width="2"/>
+                  <line x1="8" y1="21" x2="16" y2="21" stroke="currentColor" stroke-width="2"/>
+                  <line x1="12" y1="17" x2="12" y2="21" stroke="currentColor" stroke-width="2"/>
+                </svg>
+              </div>
+
+              <div class="mb-3">
+                <div class="mb-2">
+                  <span class="badge bg-primary mb-1">{{ int.Role }}</span>
+                </div>
+                <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem;">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" style="color: var(--text-secondary);">
+                    <path d="M20 10C20 16 12 22 12 22S4 16 4 10C4 5.58172 7.58172 2 12 2C16.4183 2 20 5.58172 20 10Z" stroke="currentColor" stroke-width="2"/>
+                    <circle cx="12" cy="10" r="3" stroke="currentColor" stroke-width="2"/>
+                  </svg>
+                  <small class="text-muted">{{ int.City }}</small>
+                </div>
+                <div style="display: flex; align-items: center; gap: 0.5rem;">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" style="color: var(--text-secondary);">
+                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2" stroke="currentColor" stroke-width="2"/>
+                    <line x1="16" y1="2" x2="16" y2="6" stroke="currentColor" stroke-width="2"/>
+                    <line x1="8" y1="2" x2="8" y2="6" stroke="currentColor" stroke-width="2"/>
+                    <line x1="3" y1="10" x2="21" y2="10" stroke="currentColor" stroke-width="2"/>
+                  </svg>
+                  <small class="text-muted">{{ int.Sector }}</small>
+                </div>
+              </div>
+
+              <div class="mt-auto">
                 <a href="{{ url_for('ranks_for_internship', internship_id=int.InternshipID) }}" 
-                   class="btn btn-sm btn-outline-primary">
-                  View Ranks →
+                   class="btn btn-primary w-100">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" style="margin-right: 8px;">
+                    <path d="M12 2L15.09 8.26L22 9L15.09 9.74L12 22L8.91 9.74L2 9L8.91 8.26L12 2Z" stroke="currentColor" stroke-width="2"/>
+                  </svg>
+                  View Rankings
                 </a>
               </div>
             </div>
           </div>
-        {% endfor %}
+        </div>
+      {% endfor %}
+    </div>
+
+    <!-- Quick Actions -->
+    <div class="mt-5">
+      <div class="card">
+        <div class="card-body text-center p-4">
+          <h5 class="mb-3">Need Help Getting Started?</h5>
+          <p class="text-muted mb-4">Explore our comprehensive dashboard or submit your application to join the matching process</p>
+          <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+            <a href="{{ url_for('dashboard') }}" class="btn btn-secondary">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" style="margin-right: 8px;">
+                <rect x="3" y="3" width="18" height="18" rx="2" ry="2" stroke="currentColor" stroke-width="2"/>
+                <path d="M9 9H15M9 15H12" stroke="currentColor" stroke-width="2"/>
+              </svg>
+              View Analytics
+            </a>
+            <a href="{{ url_for('about') }}" class="btn btn-primary">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" style="margin-right: 8px;">
+                <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/>
+                <path d="M9.09 9C9.3251 8.33167 9.78915 7.76811 10.4 7.40913C11.0108 7.05016 11.7289 6.91894 12.4272 7.03871C13.1255 7.15849 13.7588 7.52152 14.2151 8.06353C14.6713 8.60553 14.9211 9.29152 14.92 10C14.92 12 11.92 13 11.92 13" stroke="currentColor" stroke-width="2"/>
+                <path d="H12V17H12.01" stroke="currentColor" stroke-width="2"/>
+              </svg>
+              Learn More
+            </a>
+          </div>
+        </div>
       </div>
-    {% else %}
-      <p class="text-muted">No internships found.</p>
-    {% endif %}
-  </div>
+    </div>
+
+  {% else %}
+    <!-- Empty State -->
+    <div class="text-center py-5">
+      <svg width="64" height="64" viewBox="0 0 24 24" fill="none" style="color: var(--text-tertiary); margin-bottom: 2rem;">
+        <rect x="3" y="4" width="18" height="18" rx="2" ry="2" stroke="currentColor" stroke-width="2"/>
+        <line x1="16" y1="2" x2="16" y2="6" stroke="currentColor" stroke-width="2"/>
+        <line x1="8" y1="2" x2="8" y2="6" stroke="currentColor" stroke-width="2"/>
+        <line x1="3" y1="10" x2="21" y2="10" stroke="currentColor" stroke-width="2"/>
+      </svg>
+      <h3 class="mb-3">No Internships Available</h3>
+      <p class="text-muted mb-4">There are currently no internship opportunities posted. Check back soon for new opportunities.</p>
+      <a href="{{ url_for('apply') }}" class="btn btn-primary">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" style="margin-right: 8px;">
+          <path d="M14.828 14.828L20.485 20.485M16.9 11.45C16.9 14.5287 14.5287 16.9 11.45 16.9C8.37132 16.9 6 14.5287 6 11.45C6 8.37132 8.37132 6 11.45 6C14.5287 6 16.9 8.37132 16.9 11.45Z" stroke="currentColor" stroke-width="2"/>
+        </svg>
+        Submit Application
+      </a>
+    </div>
+  {% endif %}
+</div>
 {% endblock %}

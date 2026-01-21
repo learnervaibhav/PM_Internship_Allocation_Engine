@@ -1,8 +1,514 @@
 {% extends "base.html" %}
 {% block content %}
-  <div class="text-center mt-5">
-    <h1 class="text-primary">Welcome to the PM Internship Portal</h1>
-    <p class="lead">Smart AI-based allocation system for internships</p>
-    <a href="{{ url_for('apply') }}" class="btn btn-success btn-lg mt-3">Apply Now</a>
+  <div class="container animate-fade-in-up">
+    <!-- Hero Section -->
+    <div class="hero">
+      <h1>Welcome to the Future of Internship Matching</h1>
+      <p>Smart AI-powered allocation system connecting talent with opportunities</p>
+      <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+        <a href="{{ url_for('apply') }}" class="btn btn-success btn-lg animate-pulse">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" style="margin-right: 8px;">
+            <path d="M16 21V5C16 4.4 16.4 4 17 4S18 4.4 18 5V21M6 21V5C6 4.4 6.4 4 7 4S8 4.4 8 5V21" stroke="currentColor" stroke-width="2"/>
+            <path d="M12 17V9" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+          Start Your Journey
+        </a>
+        <a href="{{ url_for('dashboard') }}" class="btn btn-secondary btn-lg">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" style="margin-right: 8px;">
+            <rect x="3" y="3" width="18" height="18" rx="2" ry="2" stroke="currentColor" stroke-width="2"/>
+            <line x1="9" y1="9" x2="15" y2="15" stroke="currentColor" stroke-width="2"/>
+            <line x1="15" y1="9" x2="9" y2="15" stroke="currentColor" stroke-width="2"/>
+          </svg>
+          View Analytics
+        </a>
+      </div>
+    </div>
+
+    <!-- How Matching Works - Interactive Illustration -->
+    <div class="matching-process-section mb-5">
+      <div class="text-center mb-5">
+        <h3 class="display-5 fw-bold mb-3">How Our AI Matching Works</h3>
+        <p class="fs-5 text-muted">Watch how candidate data and internship opportunities merge through our intelligent system</p>
+      </div>
+      
+      <!-- Interactive Flow Diagram -->
+      <div class="flow-diagram-container">
+        <div class="flow-diagram">
+          <!-- SVG Curved Connection Paths - Fixed Positioning -->
+          <div class="connection-path">
+            <svg viewBox="0 0 1200 500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet">
+              <!-- Curved path from candidate to engine -->
+              <path d="M 280 200 Q 450 150 600 280" 
+                    stroke="url(#gradient1)" 
+                    stroke-width="2" 
+                    fill="none" 
+                    stroke-dasharray="8,4"
+                    opacity="0.6">
+                <animate attributeName="stroke-dashoffset" 
+                         values="0;24;0" 
+                         dur="3s" 
+                         repeatCount="indefinite"/>
+              </path>
+              
+              <!-- Curved path from internship to engine -->
+              <path d="M 920 200 Q 750 150 600 280" 
+                    stroke="url(#gradient2)" 
+                    stroke-width="2" 
+                    fill="none" 
+                    stroke-dasharray="8,4"
+                    opacity="0.6">
+                <animate attributeName="stroke-dashoffset" 
+                         values="0;-24;0" 
+                         dur="3s" 
+                         repeatCount="indefinite"/>
+              </path>
+
+              <!-- Gradient definitions -->
+              <defs>
+                <linearGradient id="gradient1" x1="0%" y1="0%" x2="100%" y2="0%">
+                  <stop offset="0%" style="stop-color:rgba(0,122,255,0.2);stop-opacity:0"/>
+                  <stop offset="50%" style="stop-color:rgba(0,122,255,0.8);stop-opacity:1"/>
+                  <stop offset="100%" style="stop-color:rgba(0,122,255,0.2);stop-opacity:0"/>
+                </linearGradient>
+                <linearGradient id="gradient2" x1="100%" y1="0%" x2="0%" y2="0%">
+                  <stop offset="0%" style="stop-color:rgba(52,199,89,0.2);stop-opacity:0"/>
+                  <stop offset="50%" style="stop-color:rgba(52,199,89,0.8);stop-opacity:1"/>
+                  <stop offset="100%" style="stop-color:rgba(52,199,89,0.2);stop-opacity:0"/>
+                </linearGradient>
+              </defs>
+            </svg>
+          </div>
+
+          <!-- Left Side: Candidate Data -->
+          <div class="data-source candidate-data">
+            <div class="data-source-header">
+              <div class="data-icon candidate-icon">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none">
+                  <path d="M20 21V19C20 16.7909 18.2091 15 16 15H8C5.79086 15 4 16.7909 4 19V21M16 7C16 9.20914 14.2091 11 12 11C9.79086 11 8 9.20914 8 7C8 4.79086 9.79086 3 12 3C14.2091 3 16 4.79086 16 7Z" stroke="currentColor" stroke-width="2"/>
+                </svg>
+              </div>
+              <h5>Candidate Data</h5>
+              <p class="small text-muted">Supply Side</p>
+            </div>
+            <div class="data-items">
+              <div class="data-item">📋 Profile Information</div>
+              <div class="data-item">🎓 Education & Grades</div>
+              <div class="data-item">💡 Skills & Expertise</div>
+              <div class="data-item">📍 Location Preferences</div>
+              <div class="data-item">📄 Resume Analysis</div>
+            </div>
+
+          </div>
+
+          <!-- Center: AI Matching Engine -->
+          <div class="matching-engine">
+            <div class="engine-core">
+              <div class="ai-brain">
+                <svg width="48" height="48" viewBox="0 0 24 24" fill="none">
+                  <path d="M12 2L13.09 8.26L22 9L13.09 9.74L12 16L10.91 9.74L2 9L10.91 8.26L12 2Z" stroke="currentColor" stroke-width="2"/>
+                </svg>
+              </div>
+              <h5>AI Matching Engine</h5>
+              <div class="processing-steps">
+                <div class="step">🔍 Feature Extraction</div>
+                <div class="step">⚡ Semantic Analysis</div>
+                <div class="step">📊 Score Calculation</div>
+                <div class="step">🎯 Smart Allocation</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Side: Internship Data -->
+          <div class="data-source internship-data">
+            <div class="data-source-header">
+              <div class="data-icon internship-icon">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none">
+                  <rect x="2" y="3" width="20" height="14" rx="2" ry="2" stroke="currentColor" stroke-width="2"/>
+                  <line x1="8" y1="21" x2="16" y2="21" stroke="currentColor" stroke-width="2"/>
+                  <line x1="12" y1="17" x2="12" y2="21" stroke="currentColor" stroke-width="2"/>
+                </svg>
+              </div>
+              <h5>Internship Opportunities</h5>
+              <p class="small text-muted">Demand Side</p>
+            </div>
+            <div class="data-items">
+              <div class="data-item">💼 Role Descriptions</div>
+              <div class="data-item">🔧 Skill Requirements</div>
+              <div class="data-item">📈 Capacity & Slots</div>
+              <div class="data-item">🌍 Location & Duration</div>
+              <div class="data-item">✅ Special Conditions</div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Results Flow -->
+        <div class="results-flow">
+          <!-- SVG Animated Arrow Connection -->
+          <div class="results-connection">
+            <svg viewBox="0 0 100 200" xmlns="http://www.w3.org/2000/svg">
+              <path d="M 50 20 L 50 150" 
+                    stroke="url(#gradient3)" 
+                    stroke-width="4" 
+                    fill="none" 
+                    stroke-dasharray="15,8"
+                    opacity="0.8"
+                    marker-end="url(#arrowhead)">
+                <animate attributeName="stroke-dashoffset" 
+                         values="0;46;0" 
+                         dur="3s" 
+                         repeatCount="indefinite"/>
+              </path>
+              
+              <!-- Arrow marker -->
+              <defs>
+                <marker id="arrowhead" markerWidth="10" markerHeight="7" 
+                        refX="9" refY="3.5" orient="auto">
+                  <polygon points="0 0, 10 3.5, 0 7" 
+                           fill="rgba(52,199,89,0.8)"/>
+                </marker>
+                
+                <linearGradient id="gradient3" x1="0%" y1="0%" x2="0%" y2="100%">
+                  <stop offset="0%" style="stop-color:rgba(52,199,89,0.3);stop-opacity:0"/>
+                  <stop offset="50%" style="stop-color:rgba(52,199,89,0.9);stop-opacity:1"/>
+                  <stop offset="100%" style="stop-color:rgba(52,199,89,0.3);stop-opacity:0"/>
+                </linearGradient>
+              </defs>
+            </svg>
+          </div>
+          
+          <div class="result-arrow">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none">
+              <path d="M12 5V19M19 12L12 19L5 12" stroke="currentColor" stroke-width="2"/>
+            </svg>
+          </div>
+          <div class="results-container">
+            <div class="result-card">
+              <div class="result-icon">🎯</div>
+              <h6>Perfect Matches</h6>
+              <p class="small">AI-powered compatibility scoring</p>
+            </div>
+            <div class="result-card">
+              <div class="result-icon">📊</div>
+              <h6>Smart Rankings</h6>
+              <p class="small">Merit-based priority system</p>
+            </div>
+            <div class="result-card">
+              <div class="result-icon">⚖️</div>
+              <h6>Fair Allocation</h6>
+              <p class="small">Quota and constraint handling</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Features Section -->
+    <div class="row g-4 mb-5">
+      <div class="col-md-4">
+        <div class="card h-100">
+          <div class="card-body text-center">
+            <div class="mb-3">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" style="color: var(--primary-blue);">
+                <path d="M9 12L11 14L15 10M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke="currentColor" stroke-width="2"/>
+              </svg>
+            </div>
+            <h5>AI-Powered Matching</h5>
+            <p class="text-muted">Advanced machine learning algorithms ensure perfect candidate-opportunity alignment</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card h-100">
+          <div class="card-body text-center">
+            <div class="mb-3">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" style="color: var(--success-color);">
+                <path d="M13 2L3 14H12L11 22L21 10H12L13 2Z" stroke="currentColor" stroke-width="2"/>
+              </svg>
+            </div>
+            <h5>Lightning Fast</h5>
+            <p class="text-muted">Get matched with relevant internships in seconds, not weeks</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card h-100">
+          <div class="card-body text-center">
+            <div class="mb-3">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" style="color: var(--warning-color);">
+                <path d="M12 2L13.09 8.26L22 9L13.09 9.74L12 16L10.91 9.74L2 9L10.91 8.26L12 2Z" stroke="currentColor" stroke-width="2"/>
+              </svg>
+            </div>
+            <h5>Smart Analytics</h5>
+            <p class="text-muted">Comprehensive insights and performance tracking for optimal outcomes</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Quick Stats -->
+    <div class="row g-4">
+      <div class="col-md-3">
+        <div class="stats-card">
+          <div class="stats-number">1000+</div>
+          <div class="stats-label">Applications Processed</div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="stats-card">
+          <div class="stats-number">95%</div>
+          <div class="stats-label">Match Accuracy</div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="stats-card">
+          <div class="stats-number">250+</div>
+          <div class="stats-label">Partner Companies</div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="stats-card">
+          <div class="stats-number">24/7</div>
+          <div class="stats-label">System Availability</div>
+        </div>
+      </div>
+    </div>
   </div>
+</div>
+
+<!-- Enhanced JavaScript for Interactive Effects -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  // Initialize the matching process animation
+  initMatchingAnimation();
+  
+  // Add intersection observer for triggering animations
+  const observerOptions = {
+    threshold: 0.3,
+    rootMargin: '0px 0px -50px 0px'
+  };
+  
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('animate-fade-in-up');
+        if (entry.target.classList.contains('matching-process-section')) {
+          startMatchingProcess();
+        }
+      }
+    });
+  }, observerOptions);
+  
+  // Observe all animatable elements
+  document.querySelectorAll('.card, .stats-card, .matching-process-section').forEach(el => {
+    observer.observe(el);
+  });
+});
+
+function initMatchingAnimation() {
+  const candidates = [
+    { name: "Alex Chen", skills: ["Python", "ML", "Data Science"], score: "0.95" },
+    { name: "Sarah Kim", skills: ["Java", "React", "Frontend"], score: "0.89" },
+    { name: "Raj Patel", skills: ["Cloud", "DevOps", "AWS"], score: "0.92" }
+  ];
+  
+  const internships = [
+    { company: "TechCorp", role: "AI Developer", requirements: ["Python", "ML"] },
+    { company: "StartupX", role: "Full Stack Dev", requirements: ["React", "Node.js"] },
+    { company: "CloudVendor", role: "DevOps Engineer", requirements: ["AWS", "Docker"] }
+  ];
+  
+  // Add hover effects to data items
+  const dataItems = document.querySelectorAll('.data-item');
+  dataItems.forEach((item, index) => {
+    item.addEventListener('mouseenter', function() {
+      this.style.transform = 'translateX(8px) scale(1.02)';
+      this.style.background = 'rgba(0, 122, 255, 0.1)';
+      
+      // Trigger particle animation
+      triggerParticleEffect(this);
+    });
+    
+    item.addEventListener('mouseleave', function() {
+      this.style.transform = 'translateX(0) scale(1)';
+      this.style.background = 'var(--secondary-gray)';
+    });
+  });
+  
+  // Add click interactions to processing steps
+  const steps = document.querySelectorAll('.step');
+  steps.forEach((step, index) => {
+    step.addEventListener('click', function() {
+      showProcessingDetail(index);
+    });
+  });
+  
+  // Dynamic matching simulation
+  setInterval(simulateMatching, 5000);
+}
+
+function triggerParticleEffect(element) {
+  for (let i = 0; i < 3; i++) {
+    setTimeout(() => {
+      const particle = document.createElement('div');
+      particle.className = 'dynamic-particle';
+      particle.style.cssText = `
+        position: absolute;
+        width: 6px;
+        height: 6px;
+        background: var(--primary-blue);
+        border-radius: 50%;
+        pointer-events: none;
+        z-index: 1000;
+        opacity: 0;
+        animation: particleBurst 0.8s ease-out forwards;
+      `;
+      
+      const rect = element.getBoundingClientRect();
+      particle.style.left = rect.right + 'px';
+      particle.style.top = (rect.top + rect.height / 2) + 'px';
+      
+      document.body.appendChild(particle);
+      
+      setTimeout(() => particle.remove(), 800);
+    }, i * 200);
+  }
+}
+
+function showProcessingDetail(stepIndex) {
+  const details = [
+    "Extracting semantic features from resumes and job descriptions using BERT embeddings...",
+    "Computing similarity scores between candidate skills and job requirements...",
+    "Applying machine learning models to predict match compatibility...",
+    "Optimizing allocation considering constraints and quotas..."
+  ];
+  
+  // Create a toast notification
+  const toast = document.createElement('div');
+  toast.className = 'process-toast';
+  toast.innerHTML = `
+    <div class="toast-content">
+      <div class="toast-icon">⚡</div>
+      <div class="toast-text">${details[stepIndex]}</div>
+    </div>
+  `;
+  toast.style.cssText = `
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: var(--background);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-md);
+    padding: var(--space-md);
+    box-shadow: var(--shadow-lg);
+    z-index: 1000;
+    max-width: 300px;
+    opacity: 0;
+    transform: translateX(100%);
+    transition: all 0.3s ease;
+  `;
+  
+  document.body.appendChild(toast);
+  
+  setTimeout(() => {
+    toast.style.opacity = '1';
+    toast.style.transform = 'translateX(0)';
+  }, 100);
+  
+  setTimeout(() => {
+    toast.style.opacity = '0';
+    toast.style.transform = 'translateX(100%)';
+    setTimeout(() => toast.remove(), 300);
+  }, 3000);
+}
+
+function simulateMatching() {
+  const engine = document.querySelector('.ai-brain');
+  if (!engine) return;
+  
+  // Add intensive processing effect
+  engine.style.animation = 'none';
+  engine.style.background = 'linear-gradient(135deg, #FF3B30, #FF9500)';
+  
+  setTimeout(() => {
+    engine.style.background = 'linear-gradient(135deg, #34C759, #30D158)';
+  }, 1000);
+  
+  setTimeout(() => {
+    engine.style.background = 'linear-gradient(135deg, var(--primary-blue), #5856D6)';
+    engine.style.animation = 'pulse-glow 2s infinite ease-in-out';
+  }, 2000);
+}
+
+function startMatchingProcess() {
+  // Add staggered animation to data items
+  const candidateItems = document.querySelectorAll('.candidate-data .data-item');
+  const internshipItems = document.querySelectorAll('.internship-data .data-item');
+  
+  candidateItems.forEach((item, index) => {
+    setTimeout(() => {
+      item.style.animation = 'slideInLeft 0.6s ease-out forwards';
+    }, index * 200);
+  });
+  
+  internshipItems.forEach((item, index) => {
+    setTimeout(() => {
+      item.style.animation = 'slideInRight 0.6s ease-out forwards';
+    }, index * 200);
+  });
+}
+
+// Add dynamic CSS animations
+const dynamicStyles = document.createElement('style');
+dynamicStyles.textContent = `
+  @keyframes particleBurst {
+    0% {
+      opacity: 1;
+      transform: translateX(0) scale(1);
+    }
+    100% {
+      opacity: 0;
+      transform: translateX(60px) scale(0.5);
+    }
+  }
+  
+  @keyframes slideInLeft {
+    from {
+      opacity: 0;
+      transform: translateX(-30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes slideInRight {
+    from {
+      opacity: 0;
+      transform: translateX(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  .toast-content {
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+  }
+  
+  .toast-icon {
+    font-size: 1.2rem;
+  }
+  
+  .toast-text {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+  }
+`;
+document.head.appendChild(dynamicStyles);
+</script>
 {% endblock %}

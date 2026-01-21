@@ -1,46 +1,128 @@
 {% extends "base.html" %}
 {% block content %}
-  <div class="container mt-4">
-    <h2 class="mb-4 text-primary">Admin Dashboard</h2>
+  <div class="container animate-fade-in-up">
+    <div class="mb-5">
+      <div style="display: flex; align-items: center; margin-bottom: 1rem;">
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" style="margin-right: 12px; color: var(--primary-blue);">
+          <rect x="3" y="3" width="18" height="18" rx="2" ry="2" stroke="currentColor" stroke-width="2"/>
+          <path d="M9 9H15M9 15H12" stroke="currentColor" stroke-width="2"/>
+        </svg>
+        <h2 class="display-5 fw-bold mb-0">Analytics Dashboard</h2>
+      </div>
+      <p class="text-muted fs-5">Real-time insights into application performance and system metrics</p>
+    </div>
 
-    <div class="row g-4">
+    <!-- Key Metrics -->
+    <div class="row g-4 mb-5">
       <div class="col-md-4">
-        <div class="card text-center shadow-sm">
-          <div class="card-body">
-            <h5 class="card-title">Total Applicants</h5>
-            <p class="display-6 fw-bold">{{ total }}</p>
+        <div class="stats-card">
+          <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 1rem;">
+            <div class="stats-label">Total Applicants</div>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" style="color: var(--primary-blue);">
+              <path d="M20 21V19C20 16.7909 18.2091 15 16 15H8C5.79086 15 4 16.7909 4 19V21M16 7C16 9.20914 14.2091 11 12 11C9.79086 11 8 9.20914 8 7C8 4.79086 9.79086 3 12 3C14.2091 3 16 4.79086 16 7Z" stroke="currentColor" stroke-width="2"/>
+            </svg>
           </div>
+          <div class="stats-number">{{ total }}</div>
         </div>
       </div>
       <div class="col-md-4">
-        <div class="card text-center shadow-sm">
-          <div class="card-body">
-            <h5 class="card-title">Eligible</h5>
-            <p class="display-6 text-success fw-bold">{{ eligible }}</p>
+        <div class="stats-card">
+          <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 1rem;">
+            <div class="stats-label">Eligible Candidates</div>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" style="color: var(--success-color);">
+              <path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="2"/>
+            </svg>
           </div>
+          <div class="stats-number" style="color: var(--success-color);">{{ eligible }}</div>
         </div>
       </div>
       <div class="col-md-4">
-        <div class="card text-center shadow-sm">
-          <div class="card-body">
-            <h5 class="card-title">Filtered Out</h5>
-            <p class="display-6 text-danger fw-bold">{{ filtered_out }}</p>
+        <div class="stats-card">
+          <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 1rem;">
+            <div class="stats-label">Filtered Out</div>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" style="color: var(--danger-color);">
+              <line x1="18" y1="6" x2="6" y2="18" stroke="currentColor" stroke-width="2"/>
+              <line x1="6" y1="6" x2="18" y2="18" stroke="currentColor" stroke-width="2"/>
+            </svg>
+          </div>
+          <div class="stats-number" style="color: var(--danger-color);">{{ filtered_out }}</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Charts Section -->
+    <div class="mb-5">
+      <h4 class="mb-4" style="display: flex; align-items: center;">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" style="margin-right: 12px; color: var(--primary-blue);">
+          <line x1="18" y1="20" x2="18" y2="10" stroke="currentColor" stroke-width="2"/>
+          <line x1="12" y1="20" x2="12" y2="4" stroke="currentColor" stroke-width="2"/>
+          <line x1="6" y1="20" x2="6" y2="14" stroke="currentColor" stroke-width="2"/>
+        </svg>
+        Distribution Analytics
+      </h4>
+      <div class="row g-4">
+        <div class="col-lg-6">
+          <div class="card">
+            <div class="card-header">
+              <h6 class="mb-0">Applicants by Category</h6>
+            </div>
+            <div class="card-body">
+              <div id="cat-chart" style="height: 350px;"></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="card">
+            <div class="card-header">
+              <h6 class="mb-0">Applicants by Tier</h6>
+            </div>
+            <div class="card-body">
+              <div id="tier-chart" style="height: 350px;"></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12">
+          <div class="card">
+            <div class="card-header">
+              <h6 class="mb-0">Eligibility Distribution</h6>
+            </div>
+            <div class="card-body">
+              <div id="elig-chart" style="height: 400px;"></div>
+            </div>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="mt-5">
-      <h4 class="mb-3">Distributions</h4>
-      <div class="row g-4">
-        <div class="col-md-6">
-          <div id="cat-chart"></div>
+    <!-- Quick Actions -->
+    <div class="row g-4">
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-body text-center">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" style="color: var(--primary-blue); margin-bottom: 1rem;">
+              <path d="M14 2H6C4.9 2 4 2.9 4 4V20C4 21.1 4.89 22 5.99 22H18C19.1 22 20 21.1 20 20V8L14 2Z" stroke="currentColor" stroke-width="2"/>
+              <path d="M14 2V8H20" stroke="currentColor" stroke-width="2"/>
+              <line x1="16" y1="13" x2="8" y2="13" stroke="currentColor" stroke-width="2"/>
+              <line x1="16" y1="17" x2="8" y2="17" stroke="currentColor" stroke-width="2"/>
+            </svg>
+            <h5>Export Data</h5>
+            <p class="text-muted mb-3">Download comprehensive reports</p>
+            <a href="#" class="btn btn-primary">Generate Report</a>
+          </div>
         </div>
-        <div class="col-md-6">
-          <div id="tier-chart"></div>
-        </div>
-        <div class="col-md-12">
-          <div id="elig-chart"></div>
+      </div>
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-body text-center">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" style="color: var(--success-color); margin-bottom: 1rem;">
+              <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="currentColor" stroke-width="2"/>
+              <path d="M2 17L12 22L22 17" stroke="currentColor" stroke-width="2"/>
+              <path d="M2 12L12 17L22 12" stroke="currentColor" stroke-width="2"/>
+            </svg>
+            <h5>Run Matching</h5>
+            <p class="text-muted mb-3">Execute AI matching algorithm</p>
+            <a href="{{ url_for('ranks_index') }}" class="btn btn-success">View Rankings</a>
+          </div>
         </div>
       </div>
     </div>
@@ -48,11 +130,37 @@
 
   <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
   <script>
-    var catJSON = {{ catJSON|safe }};
-    var tierJSON = {{ tierJSON|safe }};
-    var eligJSON = {{ eligJSON|safe }};
-    Plotly.newPlot("cat-chart", catJSON.data, catJSON.layout, {responsive: true});
-    Plotly.newPlot("tier-chart", tierJSON.data, tierJSON.layout, {responsive: true});
-    Plotly.newPlot("elig-chart", eligJSON.data, eligJSON.layout, {responsive: true});
+    document.addEventListener('DOMContentLoaded', function() {
+      var catJSON = {{ catJSON|safe }};
+      var tierJSON = {{ tierJSON|safe }};
+      var eligJSON = {{ eligJSON|safe }};
+
+      // Custom Plotly configuration for Apple-style charts
+      var config = {
+        displayModeBar: false,
+        responsive: true
+      };
+
+      // Apply custom styling to charts
+      if (catJSON.layout) {
+        catJSON.layout.font = { family: '-apple-system, BlinkMacSystemFont, SF Pro Display, sans-serif', size: 12 };
+        catJSON.layout.paper_bgcolor = 'rgba(0,0,0,0)';
+        catJSON.layout.plot_bgcolor = 'rgba(0,0,0,0)';
+      }
+      if (tierJSON.layout) {
+        tierJSON.layout.font = { family: '-apple-system, BlinkMacSystemFont, SF Pro Display, sans-serif', size: 12 };
+        tierJSON.layout.paper_bgcolor = 'rgba(0,0,0,0)';
+        tierJSON.layout.plot_bgcolor = 'rgba(0,0,0,0)';
+      }
+      if (eligJSON.layout) {
+        eligJSON.layout.font = { family: '-apple-system, BlinkMacSystemFont, SF Pro Display, sans-serif', size: 12 };
+        eligJSON.layout.paper_bgcolor = 'rgba(0,0,0,0)';
+        eligJSON.layout.plot_bgcolor = 'rgba(0,0,0,0)';
+      }
+
+      Plotly.newPlot('cat-chart', catJSON.data, catJSON.layout, config);
+      Plotly.newPlot('tier-chart', tierJSON.data, tierJSON.layout, config);
+      Plotly.newPlot('elig-chart', eligJSON.data, eligJSON.layout, config);
+    });
   </script>
 {% endblock %}
